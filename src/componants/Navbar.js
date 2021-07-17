@@ -22,10 +22,13 @@ const Nav = styled.nav`
     margin-top: 2rem;
     z-index: 100;
     transition: .3s ease-in-out;
+    
 
     @media screen and (max-width : 768px){
         margin-top: 0rem;
     }
+
+   
     
 `;
 
