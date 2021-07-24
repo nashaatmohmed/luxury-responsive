@@ -6,6 +6,7 @@ import ImageOne from '../images/header4.jpg';
 import ImageTwo from '../images/header5.jpg';
 import ImageThree from '../images/header6.jpg';
 import { Button } from './Button';
+import Slide from 'react-reveal/Slide';
 
 
 
@@ -52,6 +53,7 @@ const Header = styled.div`
         width: 100%;
         height: 100vh;
         object-fit: fill;
+        filter: brightness(.5);
        
     }
     .Info{
@@ -144,17 +146,19 @@ const HeaderSlider = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption className="Info">
-                    <h4>Welcome To <span>LUXURY</span> SPA</h4>
-                    <h2>Health {"& "} Relaxation</h2>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <Slide left>
+                        <h4>Welcome To <span>LUXURY</span> SPA</h4>
+                        <h2>Health {"& "} Relaxation</h2>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 
-                    <CarouselBtn>
-                        <Button to="/ContactPg" primary="true" big="true" >
-                        Register Now
-                        </Button>
-                         
-                        
-                    </CarouselBtn>
+                        <CarouselBtn>
+                            <Button to="/ContactPg" primary="true" big="true" >
+                            Register Now
+                            </Button>
+                            
+                            
+                        </CarouselBtn>
+                    </Slide>
                 </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval="4000">
@@ -165,17 +169,19 @@ const HeaderSlider = () => {
                 />
             
                 <Carousel.Caption className="Info">
-                    <h4>Welcome To <span>LUXURY</span> SPA</h4>
-                    <h2>Health {"& "} Relaxation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <Slide left>
+                        <h4>Welcome To <span>LUXURY</span> SPA</h4>
+                        <h2>Health {"& "} Relaxation</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 
-                    <CarouselBtn>
-                        <Button primary="true" big="true" >
-                        Register Now
-                        </Button>
-                         
-                        
-                    </CarouselBtn>
+                        <CarouselBtn>
+                            <Button primary="true" big="true" >
+                            Register Now
+                            </Button>
+                            
+                            
+                        </CarouselBtn>
+                    </Slide>
                 </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval="4000">
@@ -186,17 +192,19 @@ const HeaderSlider = () => {
                 />
             
                 <Carousel.Caption className="Info">
-                    <h4>Welcome To <span>LUXURY</span> SPA</h4>
-                    <h2>Health {"& "} Relaxation</h2>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <Slide left>
+                        <h4>Welcome To <span>LUXURY</span> SPA</h4>
+                        <h2>Health {"& "} Relaxation</h2>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 
-                    <CarouselBtn>
-                        <Button primary="true" big="true" >
-                        Register Now
-                        </Button>
-                         
-                        
-                    </CarouselBtn>
+                        <CarouselBtn>
+                            <Button primary="true" big="true" >
+                            Register Now
+                            </Button>
+                            
+                            
+                        </CarouselBtn>
+                    </Slide>
                 </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

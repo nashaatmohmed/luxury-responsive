@@ -4,6 +4,8 @@ import { Tittle } from './Tittle';
 import Icon1 from '../images/header1.jpg';
 import Icon2 from '../images/header2.jpg';
 import Icon3 from '../images/header3.jpg';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const TestimonialsContainer = styled.section`
     height: 1000px;
@@ -12,6 +14,7 @@ const TestimonialsContainer = styled.section`
     justify-content: center;
     align-items: center;
     background: #010606;
+    /* #010606; */
 
     @media screen and (max-width: 1024px){
         height: 1200px;
@@ -23,7 +26,7 @@ const TestimonialsContainer = styled.section`
         
     }
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 580px){
         height: 2400px;
     }
 `;
@@ -50,7 +53,7 @@ const TestimonialsWrapper = styled.div`
 `;
 
 const TestimonialsCard = styled.div`
-    background: transparent;
+    background: rgba(0,0,0,.8);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -115,74 +118,87 @@ const TestimonialsText = styled.p`
 const Testimonials = () => {
     return (
         <TestimonialsContainer>
-            <Tittle>
-                Covid 19
-                <p>Our Protection rules</p>
+              <Tittle>
+                Covid - 19
+                <p>our protection rules !!</p>
             </Tittle>
             
            
             <TestimonialsWrapper>
-                <TestimonialsCard>                  
-                    <TestimonialsIcon src={Icon1}/>
-                    <TestimonialsHeading>
-                    Luxury Arap Spa
-                    </TestimonialsHeading>
-                   
-                    <TestimonialsText>
-                    We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
-                    </TestimonialsText>
-                </TestimonialsCard>
+                <Slide left>
+                    <TestimonialsCard>                  
+                        <TestimonialsIcon src={Icon1}/>
+                        <TestimonialsHeading>
+                        Luxury Arap Spa
+                        </TestimonialsHeading>
+                    
+                        <TestimonialsText>
+                        We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
+                        </TestimonialsText>
+                    </TestimonialsCard>
+                </Slide>
+
+                <Fade top>
+                    <TestimonialsCard>                    
+                    <TestimonialsIcon src={Icon2}/>
+                        <TestimonialsHeading>
+                        Luxury Arap Spa
+                        </TestimonialsHeading>
+                        <TestimonialsText>
+                        Employees are required to wear a mask and face shield and changed between clients at all times
+                        </TestimonialsText>
+                    </TestimonialsCard>
+                </Fade>
+
+                <Slide right> 
+                    <TestimonialsCard> 
+                                
+                        <TestimonialsIcon src={Icon3}/>
+                        <TestimonialsHeading>
+                        Luxury Arap Spa
+                        </TestimonialsHeading>
+                        <TestimonialsText>
+                        Employees are required to wear clean and sterile uniforms to be changed between clients
+                        </TestimonialsText>
+                    </TestimonialsCard>
+                </Slide>
 
 
-                <TestimonialsCard>                    
-                   <TestimonialsIcon src={Icon2}/>
-                    <TestimonialsHeading>
-                    Luxury Arap Spa
-                    </TestimonialsHeading>
-                    <TestimonialsText>
-                    Employees are required to wear a mask and face shield and changed between clients at all times
-                    </TestimonialsText>
-                </TestimonialsCard>
+                <Slide left>
+                    <TestimonialsCard>                  
+                        <TestimonialsIcon src={Icon3}/>
+                        <TestimonialsHeading>
+                        Luxury Arap Spa
+                        </TestimonialsHeading>
+                        <TestimonialsText>
+                        Employees are required to wear clean and sterile uniforms to be changed between clients
+                        </TestimonialsText>
+                    </TestimonialsCard>
+                </Slide>
 
-                <TestimonialsCard>                  
-                    <TestimonialsIcon src={Icon3}/>
-                    <TestimonialsHeading>
-                       Luxury Arap Spa
-                    </TestimonialsHeading>
-                    <TestimonialsText>
-                    Employees are required to wear clean and sterile uniforms to be changed between clients
-                    </TestimonialsText>
-                </TestimonialsCard>
+                <Fade bottom>
+                    <TestimonialsCard>                  
+                        <TestimonialsIcon src={Icon3}/>
+                        <TestimonialsHeading>
+                        Luxury Arap Spa
+                        </TestimonialsHeading>
+                        <TestimonialsText>
+                        Employees are required to wear clean and sterile uniforms to be changed between clients
+                        </TestimonialsText>
+                    </TestimonialsCard>
+                </Fade>
 
-                <TestimonialsCard>                  
-                    <TestimonialsIcon src={Icon3}/>
-                    <TestimonialsHeading>
-                       Luxury Arap Spa
-                    </TestimonialsHeading>
-                    <TestimonialsText>
-                    Employees are required to wear clean and sterile uniforms to be changed between clients
-                    </TestimonialsText>
-                </TestimonialsCard>
-
-                <TestimonialsCard>                  
-                    <TestimonialsIcon src={Icon3}/>
-                    <TestimonialsHeading>
-                       Luxury Arap Spa
-                    </TestimonialsHeading>
-                    <TestimonialsText>
-                    Employees are required to wear clean and sterile uniforms to be changed between clients
-                    </TestimonialsText>
-                </TestimonialsCard>
-
-                <TestimonialsCard>                  
-                    <TestimonialsIcon src={Icon3}/>
-                    <TestimonialsHeading>
-                       Luxury Arap Spa
-                    </TestimonialsHeading>
-                    <TestimonialsText>
-                    Employees are required to wear clean and sterile uniforms to be changed between clients
-                    </TestimonialsText>
-                </TestimonialsCard>
+                <Slide right>
+                    <TestimonialsCard>                  
+                        <TestimonialsIcon src={Icon3}/>
+                        <TestimonialsHeading>
+                        Luxury Arap Spa
+                        </TestimonialsHeading>
+                        <TestimonialsText>
+                        Employees are required to wear clean and sterile uniforms to be changed between clients
+                        </TestimonialsText>
+                    </TestimonialsCard>
+                </Slide>
 
             </TestimonialsWrapper>
             

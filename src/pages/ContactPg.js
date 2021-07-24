@@ -8,7 +8,7 @@ const Contact = styled.section`
 
 const ContactImg = styled.img`
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     object-fit: cover;
     filter: brightness(.5);
 `;

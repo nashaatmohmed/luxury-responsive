@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
 import { Tittle } from './Tittle';
+import Slide from 'react-reveal/Slide';
 
 const AboutSection = styled.section`
     width: 100%;
@@ -24,7 +25,7 @@ const AboutContainer = styled.div`
 
 `;
 
-const AboutLeft = styled.div`
+const AboutRight = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +50,7 @@ const AboutLeft = styled.div`
 
 `;
 
-const AboutRight = styled.div`
+const AboutLeft = styled.div`
     padding: 1rem 2rem;
     order: ${({reverse}) =>(reverse ? '1' : '2')};
     display: flex;
@@ -84,17 +85,21 @@ const About = ({heading,paragraphOne,buttonLabel,reverse,image}) => {
             </Tittle>
             <AboutContainer>
                 <AboutLeft>
-                    <h1>{heading}</h1>
-                    <p>{paragraphOne} </p>
-                   
-                        <Button className="BTN" to="/AboutPg"  primary="true"  big="true">{buttonLabel} </Button>
-                   
+                    <Slide left>
+                        <img src={image} alt='home' />
                        
                     
-
+                    </Slide>
                 </AboutLeft>
                 <AboutRight>
-                    <img src={image} alt='home' />
+                    <Slide right>
+                        <h1>{heading}</h1>
+                        <p>{paragraphOne} </p>
+                    
+                        <Button className="BTN" to="/AboutPg"  primary="true"  big="true">{buttonLabel} </Button>
+                    
+                        
+                    </Slide>    
                 </AboutRight>
             </AboutContainer>
         </AboutSection>

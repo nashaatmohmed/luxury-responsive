@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Menu from '../data/ServiceData';
 import { Button } from './Button';
 import { Tittle } from './Tittle';
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -207,10 +209,12 @@ const ServiceGallery = () => {
             
             <ServiceCategory className="menu-tabs container">
                 <ServiceListContent className="menu-tab d-flex justify-content-center">
-                    <Button className="btn mr-3 mt-5" onClick={() => setItems(Menu)}>All Servicse</Button>
-                    <Button className="btn mr-4 mt-5" onClick={() => filterItem('massage')}>Massage</Button>
-                    <Button className="btn mr-4 mt-5" onClick={() => filterItem('moroccan')}>Moroccan Bath</Button>
-                    <Button className="btn mr-4 mt-5" onClick={() => filterItem('body')}>Body Care</Button>
+                    <Fade top>
+                        <Button className="btn mr-3 mt-5" onClick={() => setItems(Menu)}>All Servicse</Button>
+                        <Button className="btn mr-4 mt-5" onClick={() => filterItem('massage')}>Massage</Button>
+                        <Button className="btn mr-4 mt-5" onClick={() => filterItem('moroccan')}>Moroccan Bath</Button>
+                        <Button className="btn mr-4 mt-5" onClick={() => filterItem('body')}>Body Care</Button>
+                    </Fade>
                     
                 </ServiceListContent>
             </ServiceCategory>
@@ -228,35 +232,37 @@ const ServiceGallery = () => {
                                     return (
                                     
                                         <ServiceItemCard className="item1 col-12 col-md-6 col-lg-6 col-xl-4 my-5">
-                                            <CardItems className="row Item-inside">
-                                                {/* for images */}
-                                                <CardImage className="img-div">
-                                                    <img src={image} alt={name} />
-                                                </CardImage>
+                                            <Fade bottom>
+                                                <CardItems className="row Item-inside">
+                                                    {/* for images */}
+                                                    <CardImage className="img-div">
+                                                        <img src={image} alt={name} />
+                                                    </CardImage>
 
-                                                {/* menu items description */}
-                                                <CardInfo className="col-12 col-md-12 col-lg-12">
-                                                    <div className="main-title mt-2">
-                                                        <div className="name-tittle">
-                                                        <h3>{name}</h3>                                                           
-                                                        <i>{small}</i>
+                                                    {/* menu items description */}
+                                                    <CardInfo className="col-12 col-md-12 col-lg-12">
+                                                        <div className="main-title mt-2">
+                                                            <div className="name-tittle">
+                                                            <h3>{name}</h3>                                                           
+                                                            <i>{small}</i>
 
-                                                        </div>
-                                                       
+                                                            </div>
                                                         
-                                                        <p>{description }</p>
-                                                    </div>
-                                                    <div className="menu-price-book">
-                                                        <div className="price-book-divide d-flex">
-                                                            <h4>Price : {price}</h4>
-                                                           
-                                                            <Button to="/ServicesPg" className="btn" primary="true">Order Now</Button>
+                                                            
+                                                            <p>{description }</p>
+                                                        </div>
+                                                        <div className="menu-price-book">
+                                                            <div className="price-book-divide d-flex">
+                                                                <h4>Price : {price}</h4>
+                                                            
+                                                                <Button to="/ServicesPg" className="btn" primary="true">Order Now</Button>
+                                                                
+                                                            </div>
                                                             
                                                         </div>
-                                                        
-                                                    </div>
-                                                </CardInfo>
-                                            </CardItems>
+                                                    </CardInfo>
+                                                </CardItems>
+                                            </Fade>
                                         </ServiceItemCard>
                                     )
                                 })

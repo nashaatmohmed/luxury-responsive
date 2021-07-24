@@ -15,6 +15,7 @@ export const Tittle = styled.h3`
         bottom: -15px;
         left: 47.3%;
         background-color: #DFCAA0;
+        z-index: 2;
     }
 
     p{
