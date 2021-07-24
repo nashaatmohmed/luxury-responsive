@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import About from './componants/About';
 import Dropdown from './componants/Dropdown';
 import GlobalStyle from './componants/globalStyles';
@@ -12,6 +12,9 @@ import AboutPg from './pages/AboutPg';
 import ServicesPg from './pages/ServicesPg';
 import BlogsPg from './pages/BlogsPg';
 import ContactPg from './pages/ContactPg';
+import Testimonials from './componants/Testimonials';
+import PropagateLoader from "react-spinners/PropagateLoader";
+import "../src/App.css";
 
 
 
@@ -28,8 +31,30 @@ function App() {
     setIsOpen(!isOpen);
   };
 
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() =>{
+      setLoading(true)
+      setTimeout(() =>{
+        setLoading(false)
+      },3000)
+  },[]);
+
  
   return (
+
+    <div className="app">
+      {loading ? (
+      
+      <PropagateLoader
+
+       size={20} 
+       color={"#DFCAA0"} 
+       loading={loading} 
+       speedMultiplier={1.5} 
+      /> )
+
+      : (
     <Router>
      
       <Switch>
@@ -79,10 +104,13 @@ function App() {
             <HeaderSlider />
             <About {...AboutData}/>
             <ServiceGallery />
+            <Testimonials />
           </Route>
       </Switch>
 
     </Router>
+      )}
+    </div>
   );
 }
 

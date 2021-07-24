@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import Head from '../images/about.jpg';
 
 const About = styled.section`
     background-color: #000;
-    width: 100%;
-    height: 100vh;
+   
     
+`;
+
+const AboutImg = styled.img`
+     width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(.5);
 `;
 
 const AboutPg = () => {
     return (
         <About>
-            <h1>About Us</h1>
-            <h1>About Us</h1>
-            <h1>About Us</h1>
-            <h1>About Us</h1>
+            <AboutImg src={Head} alt="" />
         </About>
     )
 }

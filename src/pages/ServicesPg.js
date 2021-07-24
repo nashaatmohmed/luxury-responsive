@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import Head from '../images/service.jpg';
 
 const Service = styled.section`
-    background-color: red;
-    width: 100%;
-    height: 100vh;
+ 
     
+`;
+
+const ServiceImg = styled.img`
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(.5);
 `;
 
 const ServicesPg = () => {
     return (
         <Service>
-            <h1>Services</h1>
-            <h1>Services</h1>
-            <h1>Services</h1>
-            <h1>Services</h1>
+            <ServiceImg src={Head} alt="" />
+           
         </Service>
     )
 }

@@ -38,9 +38,11 @@ const NavLinks = css`
     align-items: center;
     height: 100%;
     cursor: pointer;
-    text-decoration: none;
+
+    list-style: none;
     color: #fff;
     padding: 0 1rem;
+    
 `;
 
 const Logo = styled(Link)`
@@ -90,6 +92,33 @@ const NavMenu = styled.div`
 
 const NavMenuLinks = styled(Link)`
       ${NavLinks}
+      position: relative;
+      text-transform: uppercase;
+      text-decoration: none !important;
+
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 16px;   
+        transition: 0.5s ease-in-out;
+        
+    }
+
+    &:hover{
+        color: #DFCAA0;
+
+            &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 25%;
+            height: 2px;
+            background-color: #DFCAA0;
+        }
+    }
 `;
 
 const NavBtn = styled.div`
