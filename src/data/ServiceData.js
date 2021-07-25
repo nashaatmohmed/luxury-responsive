@@ -1,7 +1,20 @@
 
-import ImageOne from '../images/header4.jpg';
-import ImageTwo from '../images/header5.jpg';
-import ImageThree from '../images/header6.jpg';
+import ImageOne from '../images/foot-massage1.jpg';
+import ImageTwo from '../images/turkish-hammam2.jpg';
+import ImageThree from '../images/head-massage.jpg';
+import ImageFour from '../images/moroccan-bath.jpg';
+import ImageFive from '../images/massage.jpg';
+import ImageSex from '../images/royalPakge.jpg';
+import ImageSeven from '../images/hot-stone.jpg';
+import ImageEight from '../images/wax-part-body-.jpg';
+import ImageNine from '../images/4-hand.jpg';
+import ImageTen from '../images/wax-full-body1.jpg';
+import Image11 from '../images/foot-scrb.jpg';
+import Image12 from '../images/padicer.jpg';
+import Image13 from '../images/face-mask2.jpg';
+
+
+
 
 
 const Menu = [
@@ -32,7 +45,7 @@ const Menu = [
    },
     {
        id: 4,
-       image: ImageOne,
+       image: ImageFour,
        name:"Moroccan Bath",
        category: "moroccan",
        price: "350",
@@ -40,7 +53,7 @@ const Menu = [
    },
      {
        id: 5,
-       image: ImageTwo,
+       image: ImageFive,
        name:"Body Massage",
        category: "massage",
        price: "300",
@@ -48,7 +61,7 @@ const Menu = [
    },
       {
        id: 6,
-       image: ImageThree,
+       image: ImageSex,
        name:"Royal Bath",
        category: "moroccan",
        price: "500",
@@ -56,7 +69,7 @@ const Menu = [
    },
        {
        id: 7,
-       image: ImageOne,
+       image: ImageSeven,
        name:"Hot Stone Massage",
        category: "massage",
        price: "350",
@@ -64,7 +77,7 @@ const Menu = [
    },
        {
        id: 8,
-       image: ImageTwo,
+       image: ImageEight,
        name:"Waxing or Shaving",
        small: "One Part",
        category: "body",
@@ -73,7 +86,7 @@ const Menu = [
    },
        {
        id: 9,
-       image: ImageThree,
+       image: ImageNine,
        name:"Four Hand Massage",
        category: "massage",
        price: "500",
@@ -81,7 +94,7 @@ const Menu = [
    },
        {
         id: 10,
-        image: ImageThree,
+        image: ImageTen,
         name:"waxing or Shaving",
         small: "Full Body",
         category: "body",
@@ -90,15 +103,15 @@ const Menu = [
     },
         {
         id: 11,
-        image: ImageThree,
+        image: Image11,
         name:"Foot Scurb",
         category: "body",
-        price: "500",
+        price: "100",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
     },
     {
         id: 12,
-        image: ImageThree,
+        image: Image12,
         name:"Manicure and pedicure",
         category: "body",
         price: "150",
@@ -106,7 +119,7 @@ const Menu = [
     },
     {
         id: 13,
-        image: ImageThree,
+        image: Image13,
         name:"Face Mask",
         category: "body",
         price: "500",

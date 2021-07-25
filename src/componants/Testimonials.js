@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Tittle } from './Tittle';
-import Icon1 from '../images/header1.jpg';
+import Icon1 from '../images/covid1.jpg';
 import Icon2 from '../images/header2.jpg';
 import Icon3 from '../images/header3.jpg';
 import Fade from 'react-reveal/Fade';
@@ -13,7 +13,7 @@ const TestimonialsContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #010606;
+    background: #990404;
     /* #010606; */
 
     @media screen and (max-width: 1024px){
@@ -61,8 +61,9 @@ const TestimonialsCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     padding: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.2); 
+    box-shadow: 0 2px 5px rgba(0,0,0,.8); 
     transition: all 0.2s ease-in-out;
+ 
 
     &:hover{
         transform: scale(1.02);
@@ -78,8 +79,9 @@ const TestimonialsCard = styled.div`
 
 const TestimonialsIcon = styled.img`
     height: 160px;
-    width: 160px;
+    width: 100%;
     margin-bottom: 10px;
+    object-fit: cover;
 `;
 
 const TestimonialsHeading = styled.h3`

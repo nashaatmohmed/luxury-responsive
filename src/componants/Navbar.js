@@ -107,7 +107,8 @@ const NavMenuLinks = styled(Link)`
     }
 
     &:hover{
-        color: #DFCAA0;
+        color: #990404;
+        font-weight: bold;
 
             &::before{
             content: '';
@@ -116,7 +117,7 @@ const NavMenuLinks = styled(Link)`
             left: 16px;
             width: 25%;
             height: 2px;
-            background-color: #DFCAA0;
+            background-color: #990404;
         }
     }
 `;
@@ -165,8 +166,8 @@ const Navbar = ({toggle}) => {
             </NavMenu>
 
             <NavBtn>
-                <Button to="/ContactPg" primary='true'>
-                    click me
+                <Button to="/ContactPg">
+                    Contact Us
                 </Button>
             </NavBtn>
             

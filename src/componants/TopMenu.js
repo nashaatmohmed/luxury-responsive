@@ -16,7 +16,7 @@ const TopNav = styled.div`
 
     height: 30px;
     width: 100%;
-    background: #DFCAA0;
+    background: #990404;
     display: flex;
     justify-content: space-between;
     align-items: center;

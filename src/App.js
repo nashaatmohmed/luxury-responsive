@@ -15,6 +15,8 @@ import ContactPg from './pages/ContactPg';
 import Testimonials from './componants/Testimonials';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import "../src/App.css";
+import OfferPg from './pages/OfferPg';
+import Goals from './componants/Goals';
 
 
 
@@ -69,6 +71,15 @@ function App() {
             <AboutPg />
           </Route>
 
+          <Route path="/OfferPg">
+            <GlobalStyle />
+            <TopMenu />          
+            <Navbar toggle={toggle}/>
+            <Dropdown isOpen={isOpen} toggle={toggle}/>
+            
+            <OfferPg />
+          </Route>
+
           <Route path="/ServicesPg">
             <GlobalStyle />
             <TopMenu />          
@@ -102,6 +113,7 @@ function App() {
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <HeaderSlider />
+            <Goals />
             <About {...AboutData}/>
             <ServiceGallery />
             <Testimonials />
