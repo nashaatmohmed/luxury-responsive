@@ -70,6 +70,7 @@ const NavBars = styled.i`
         top: 20px;
         right: 20px;
         transform: translate(-58%, 25%);
+        z-index: 99;
        
     }
     
