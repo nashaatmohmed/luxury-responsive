@@ -4,7 +4,7 @@ import Dropdown from './componants/Dropdown';
 import GlobalStyle from './componants/globalStyles';
 import HeaderSlider from './componants/HeaderSlider';
 import Navbar from "./componants/Navbar";
-import TopMenu from './componants/TopMenu';
+// import TopMenu from './componants/TopMenu';
 import ServiceGallery from './componants/ServiceGallery';
 import { AboutData } from './data/AboutData';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -13,6 +13,7 @@ import ServicesPg from './pages/ServicesPg';
 import BlogsPg from './pages/BlogsPg';
 import ContactPg from './pages/ContactPg';
 import Testimonials from './componants/Testimonials';
+import SocialMain from './componants/SoialMain';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import "../src/App.css";
 import OfferPg from './pages/OfferPg';
@@ -64,55 +65,56 @@ function App() {
 
           <Route path="/AboutPg">
             <GlobalStyle />
-            <TopMenu />          
+            {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
-            
+            <SocialMain />
             <AboutPg />
           </Route>
 
           <Route path="/OfferPg">
             <GlobalStyle />
-            <TopMenu />          
+            {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
-            
+            <SocialMain />
             <OfferPg />
           </Route>
 
           <Route path="/ServicesPg">
             <GlobalStyle />
-            <TopMenu />          
+            {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
-            
+            <SocialMain />
             <ServicesPg />
           </Route>
 
           <Route path="/BlogsPg">
             <GlobalStyle />
-            <TopMenu />          
+            {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
-            
+            <SocialMain />
             <BlogsPg />
           </Route>
 
           <Route path="/ContactPg">
             <GlobalStyle />
-            <TopMenu />          
+            {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
-            
+            <SocialMain />
             <ContactPg />
           </Route>
 
           <Route path="/">
             <GlobalStyle />
-            <TopMenu />          
+            {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <HeaderSlider />
+            <SocialMain />
             <Goals />
             <About {...AboutData}/>
             <ServiceGallery />

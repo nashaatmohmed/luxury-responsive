@@ -61,6 +61,7 @@ const GoalsCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     padding: 20px;
+    background: #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,1); 
     transition: all 0.2s ease-in-out;
     margin-right: 5px;
@@ -87,6 +88,7 @@ const GoalsHeading = styled(Link)`
     text-decoration: none;
     color: #990404;
     font-weight: bold;
+    font-size: large;
     margin-bottom: 1rem;
     transition: 0.3s ease-in-out;
 

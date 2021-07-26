@@ -162,6 +162,7 @@ const CardInfo = styled.div`
             white-space: nowrap;
             font-size: clamp(1rem, 6vw, 1.5rem);
             font-weight: bold;
+            color: #990404;
            
             
         }
@@ -204,7 +205,7 @@ const ServiceGallery = () => {
         <Service>
             <Tittle>
                 Services
-                <p>what we do ?</p>
+                <p>what we have ?</p>
             </Tittle>
             
             <ServiceCategory className="menu-tabs container">

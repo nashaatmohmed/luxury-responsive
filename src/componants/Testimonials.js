@@ -13,7 +13,7 @@ const TestimonialsContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #990404;
+    background: #0f1315;
     /* #010606; */
 
     @media screen and (max-width: 1024px){
@@ -28,6 +28,10 @@ const TestimonialsContainer = styled.section`
 
     @media screen and (max-width: 580px){
         height: 2400px;
+    }
+
+    .tittle{
+        color: #fff;
     }
 `;
 
@@ -53,7 +57,7 @@ const TestimonialsWrapper = styled.div`
 `;
 
 const TestimonialsCard = styled.div`
-    background: rgba(0,0,0,.8);
+    background: #990404;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -61,7 +65,7 @@ const TestimonialsCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.8); 
+    box-shadow: 0 2px 3px #fff; 
     transition: all 0.2s ease-in-out;
  
 
@@ -84,7 +88,7 @@ const TestimonialsIcon = styled.img`
     object-fit: cover;
 `;
 
-const TestimonialsHeading = styled.h3`
+const TestimonialsHeading = styled.h4`
     font-size: 1.5rem;
     color: #fff;
     margin-bottom: 10px;
@@ -108,19 +112,19 @@ const TestimonialsHeading = styled.h3`
 // `;
 
 
-const TestimonialsText = styled.p`
+const TestimonialsText = styled.small`
     font-size: 1rem;
     height: 30%;
     text-align: center;
-    color: lightgrey;
     max-width: 400px;
+    color: rgba(0,0,0,.8);
    
 `;
 
 const Testimonials = () => {
     return (
         <TestimonialsContainer>
-              <Tittle>
+            <Tittle className="tittle">
                 Covid - 19
                 <p>our protection rules !!</p>
             </Tittle>
@@ -131,11 +135,11 @@ const Testimonials = () => {
                     <TestimonialsCard>                  
                         <TestimonialsIcon src={Icon1}/>
                         <TestimonialsHeading>
-                        Luxury Arap Spa
+                            Luxury Arap Spa
                         </TestimonialsHeading>
                     
                         <TestimonialsText>
-                        We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
+                            We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
                         </TestimonialsText>
                     </TestimonialsCard>
                 </Slide>

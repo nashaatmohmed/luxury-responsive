@@ -9,12 +9,12 @@ export const Tittle = styled.h3`
 
     &::before{
         content: "";
-        width: 5%;
+        width: 4%;
         height: 5px;
         position: absolute;
         bottom: -15px;
         left: 47.3%;
-        background-color: #DFCAA0;
+        background-color: #990404;
         z-index: 2;
     }
 

@@ -4,13 +4,14 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import CloseIcon from '@material-ui/icons/Close';
 import { menuData } from '../data/MenuData';
+// import SoialMain from './SoialMain';
 
 const DropdownContainer = styled.div`
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: green;
+    background-color: #990404;
     display: grid;
     align-items: flex-start;
     top: 0;
@@ -19,7 +20,7 @@ const DropdownContainer = styled.div`
     opacity: ${({isOpen}) =>(isOpen ? '1' : '0')};
     top: ${({isOpen}) =>(isOpen ? '0' : '-100%')};
 
-
+  
 `;
 
 const Icon = styled.div`
@@ -33,11 +34,20 @@ const Icon = styled.div`
 `;
 
 const Close = styled(CloseIcon)`
-    color: #000d1a;
+    color: #fff;
+    font-weight: bold;
+
+    &:hover{
+        color: #000;
+    }
 `;
 
 const DropdownWrapper = styled.div`
-
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
 `;
 
 const DropdownMenu = styled.div`
@@ -46,10 +56,11 @@ const DropdownMenu = styled.div`
     grid-template-rows: repeat(5, 80px);
     text-align: center;
     margin-bottom: 4rem;
+ 
     
 
     @media screen and (max-width: 480px){
-        grid-template-rows: repeat(5, 60px);
+        grid-template-rows: repeat(5, 100px);
     }
 
 `;
@@ -59,6 +70,7 @@ const DropdownLink = styled(Link)`
     align-items: center;
     justify-content: center;
     color: #fff;
+    font-weight: bold;
     font-size: 1.5rem;
     text-decoration: none;
     list-style: none;
@@ -67,6 +79,7 @@ const DropdownLink = styled(Link)`
 
     &:hover{
         color: #000d1a;
+        text-decoration: none;
     }
 
 `;
@@ -102,6 +115,7 @@ const Dropdown = ({isOpen, toggle}) => {
                     </Button>
                 </BtnWrap>
             </DropdownWrapper>
+            {/* <SoialMain className="social"/> */}
             
         </DropdownContainer>
     )

@@ -19,9 +19,9 @@ const Nav = styled.nav`
     align-items: center;
     position: fixed;
     padding: 1rem 2rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     z-index: 100;
-    transition: .3s ease-in-out;
+    transition:all .3s ease-in-out;
     
 
     @media screen and (max-width : 768px){
@@ -103,7 +103,7 @@ const NavMenuLinks = styled(Link)`
         position: absolute;
         bottom: 0;
         left: 16px;   
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
         
     }
 
