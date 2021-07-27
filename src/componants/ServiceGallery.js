@@ -5,6 +5,7 @@ import Menu from '../data/ServiceData';
 import { Button } from './Button';
 import { Tittle } from './Tittle';
 import Fade from 'react-reveal/Fade';
+import CardBg from '../images/back-ground-card.webp';
 
 
 
@@ -59,7 +60,9 @@ const ServiceItemCard = styled.div`
 
 const CardItems = styled.div`
 
-    background: white;
+    background-image: url(${CardBg});
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 1rem;
     height: 80vh;
     display: flex;
@@ -69,10 +72,7 @@ const CardItems = styled.div`
     text-align: center;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
     
 
     @media screen and (max-width : 1024px){
@@ -244,13 +244,11 @@ const ServiceGallery = () => {
                                                     <CardInfo className="col-12 col-md-12 col-lg-12">
                                                         <div className="main-title mt-2">
                                                             <div className="name-tittle">
-                                                            <h3>{name}</h3>                                                           
-                                                            <i>{small}</i>
+                                                                <h3>{name}</h3>                                                           
+                                                                <i>{small}</i>
 
-                                                            </div>
-                                                        
-                                                            
-                                                            <p>{description }</p>
+                                                            </div>                                                                                                              
+                                                      <p>{description }</p>
                                                         </div>
                                                         <div className="menu-price-book">
                                                             <div className="price-book-divide d-flex">

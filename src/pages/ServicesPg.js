@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ServiceGallery from '../componants/ServiceGallery';
 import Head from '../images/service.jpg';
 
 const Service = styled.section`
@@ -18,6 +19,7 @@ const ServicesPg = () => {
     return (
         <Service>
             <ServiceImg src={Head} alt="" />
+            <ServiceGallery />
            
         </Service>
     )

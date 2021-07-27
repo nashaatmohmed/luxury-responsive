@@ -5,7 +5,7 @@ import GlobalStyle from './componants/globalStyles';
 import HeaderSlider from './componants/HeaderSlider';
 import Navbar from "./componants/Navbar";
 // import TopMenu from './componants/TopMenu';
-import ServiceGallery from './componants/ServiceGallery';
+// import ServiceGallery from './componants/ServiceGallery';
 import { AboutData } from './data/AboutData';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import AboutPg from './pages/AboutPg';
@@ -19,6 +19,7 @@ import "../src/App.css";
 import OfferPg from './pages/OfferPg';
 import Goals from './componants/Goals';
 import Stuff from './pages/Stuff';
+import Footer from './componants/Footer';
 
 
 
@@ -71,6 +72,7 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <AboutPg />
+            <Footer />
           </Route>
 
           <Route path="/OfferPg">
@@ -80,6 +82,7 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <OfferPg />
+            <Footer />
           </Route>
 
           <Route path="/STuff">
@@ -89,6 +92,7 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <Stuff />
+            <Footer />
           </Route>
 
           <Route path="/ServicesPg">
@@ -98,6 +102,7 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <ServicesPg />
+            <Footer />
           </Route>
 
           <Route path="/BlogsPg">
@@ -107,6 +112,7 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <BlogsPg />
+            <Footer />
           </Route>
 
           <Route path="/ContactPg">
@@ -116,6 +122,7 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <ContactPg />
+            <Footer />
           </Route>
 
           <Route path="/">
@@ -127,8 +134,9 @@ function App() {
             <SocialMain />
             <Goals />
             <About {...AboutData}/>
-            <ServiceGallery />
+            {/* <ServiceGallery /> */}
             <Testimonials />
+            <Footer />
           </Route>
       </Switch>
 

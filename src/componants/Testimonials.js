@@ -6,6 +6,7 @@ import Icon2 from '../images/header2.jpg';
 import Icon3 from '../images/header3.jpg';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+import CardBg from '../images/back-ground-card.webp';
 
 const TestimonialsContainer = styled.section`
     height: 1000px;
@@ -13,7 +14,7 @@ const TestimonialsContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #0f1315;
+    
     /* #010606; */
 
     @media screen and (max-width: 1024px){
@@ -57,7 +58,8 @@ const TestimonialsWrapper = styled.div`
 `;
 
 const TestimonialsCard = styled.div`
-    background: #990404;
+    background-image: url(${CardBg});
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -65,7 +67,7 @@ const TestimonialsCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     padding: 20px;
-    box-shadow: 0 2px 3px #fff; 
+    box-shadow: 0 2px 3px #000; 
     transition: all 0.2s ease-in-out;
  
 
@@ -117,7 +119,7 @@ const TestimonialsText = styled.small`
     height: 30%;
     text-align: center;
     max-width: 400px;
-    color: rgba(0,0,0,.8);
+    color: #fff;
    
 `;
 
