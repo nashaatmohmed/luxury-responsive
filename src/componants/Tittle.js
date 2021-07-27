@@ -5,8 +5,9 @@ export const Tittle = styled.h3`
     text-align: center;
     margin: 2rem 0;
     position: relative;
+    color: #fff;
     /* display: block; */
-
+/* 
     &::before{
         content: "";
         width: 4%;
@@ -14,9 +15,9 @@ export const Tittle = styled.h3`
         position: absolute;
         bottom: -15px;
         left: 47.3%;
-        background-color: #990404;
+        background-color: #fff;
         z-index: 2;
-    }
+    } */
 
     p{
         font-size: 1rem;

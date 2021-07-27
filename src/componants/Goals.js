@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Icon1 from '../images/light1.gif';
 import Icon2 from '../images/service.gif';
 import Icon3 from '../images/speci.gif';
+import CardBg from '../images/back-ground-card.webp';
 
 const GoalsSection = styled.section`
     height: 500px;
@@ -27,6 +28,13 @@ const GoalsSection = styled.section`
 
     @media screen and (max-width: 580px){
         height: 1000px;
+    }
+`;
+
+const GoalLink = styled(Link)`
+   
+    &:hover{
+        text-decoration: none;
     }
 `;
 
@@ -61,16 +69,18 @@ const GoalsCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     padding: 20px;
-    background: #fff;
+    background-image: url(${CardBg});
+    background-size: contain;
     box-shadow: 0 3px 6px rgba(0,0,0,1); 
     transition: all 0.2s ease-in-out;
     margin-right: 5px;
-    border: 1px solid #990404;
+    
 
     &:hover{
         transform: scale(1.02);
         transition: 0.2s ease-in-out;
         cursor: pointer;
+        text-decoration: none;
     }
     @media screen and (max-width: 768px){
     
@@ -86,7 +96,7 @@ const GoalsIcon = styled.img`
 
 const GoalsHeading = styled(Link)`
     text-decoration: none;
-    color: #990404;
+    color: #fff;
     font-weight: bold;
     font-size: large;
     margin-bottom: 1rem;
@@ -94,13 +104,13 @@ const GoalsHeading = styled(Link)`
 
     &:hover{
         text-decoration: none;
-        color: #5A0101;
+        color: #fff;
 
     }
 `;
 
 const GoalsText = styled.p`
-
+    color: lightgrey;
 `;
 
 
@@ -110,6 +120,7 @@ const Goals = () => {
     return (
         <GoalsSection>
             <GoalsWrapper>
+                <GoalLink to="/OfferPg">
                     <GoalsCard>                  
                         <GoalsIcon src={Icon1}/>
                         <GoalsHeading to="/OfferPg">
@@ -120,10 +131,11 @@ const Goals = () => {
                         We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
                         </GoalsText>
                     </GoalsCard>
-
+                </GoalLink>
+                <GoalLink to="/Stuff">
                     <GoalsCard>                  
                         <GoalsIcon src={Icon2}/>
-                        <GoalsHeading to="/AboutPg">
+                        <GoalsHeading to="/Stuff">
                         Our Professional Massuse
 
                         </GoalsHeading>
@@ -132,7 +144,8 @@ const Goals = () => {
                         We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
                         </GoalsText>
                     </GoalsCard>
-
+                </GoalLink>
+                <GoalLink to="/ServicesPg">
                     <GoalsCard>                  
                         <GoalsIcon src={Icon3}/>
                         <GoalsHeading to="/ServicesPg">
@@ -144,7 +157,7 @@ const Goals = () => {
                         We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
                         </GoalsText>
                     </GoalsCard>
-
+                </GoalLink>
             </GoalsWrapper>
                    
         </GoalsSection>

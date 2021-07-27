@@ -18,6 +18,7 @@ import PropagateLoader from "react-spinners/PropagateLoader";
 import "../src/App.css";
 import OfferPg from './pages/OfferPg';
 import Goals from './componants/Goals';
+import Stuff from './pages/Stuff';
 
 
 
@@ -79,6 +80,15 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <OfferPg />
+          </Route>
+
+          <Route path="/STuff">
+            <GlobalStyle />
+            {/* <TopMenu />           */}
+            <Navbar toggle={toggle}/>
+            <Dropdown isOpen={isOpen} toggle={toggle}/>
+            <SocialMain />
+            <Stuff />
           </Route>
 
           <Route path="/ServicesPg">

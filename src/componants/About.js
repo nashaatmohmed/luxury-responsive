@@ -37,6 +37,7 @@ const AboutRight = styled.div`
     h1{
         margin-bottom: 1rem;
         font-size: clamp(1.5rem, 6vw, 2rem);
+        color: #fff;
     }
     p{
         margin-bottom: 2.5rem;
@@ -65,7 +66,7 @@ const AboutLeft = styled.div`
         width: 100%;
         height: 90%;
         object-fit: fill;
-        border-radius: 50%;
+        border-radius: 10%;
 
         
     @media screen and (max-width: 768px) {
