@@ -55,7 +55,7 @@ const DropdownMenu = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 80px);
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
  
     
 
@@ -110,8 +110,8 @@ const Dropdown = ({isOpen, toggle}) => {
                     
                 </DropdownMenu>
                 <BtnWrap>
-                    <Button >
-                        Click me
+                    <Button to="/ContactPg">
+                        Contact Us
                     </Button>
                 </BtnWrap>
             </DropdownWrapper>

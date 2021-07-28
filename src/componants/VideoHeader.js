@@ -14,8 +14,8 @@ const VideoContainer = styled.div`
     margin-top: 100px;
     color: #fff;
 
-    @media screen and (max-width: 768px){
-        height: 70vh;
+    @media screen and (max-width: 600px){
+        height: 60vh;
     }
     
 
