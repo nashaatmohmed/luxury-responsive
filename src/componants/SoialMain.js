@@ -13,8 +13,6 @@ const SocialContainer = styled.section`
     max-width: 100px;
     height: 60px;
     z-index: 100;
-
-
 `;
 
 const SocialWrapper = styled.section`
@@ -33,7 +31,7 @@ const SocialTele = styled(Link)`
     align-items: center;
     justify-content: center;
     border-radius: 26px 0px 0px 25px;
-    transform: translate(128px, -10px);
+    transform: translate(118px, -10px);
     transition: all .2s ease-in-out;
     text-decoration: none !important;
     box-shadow: 0px 3px 5px rgba(0,0,0,1);

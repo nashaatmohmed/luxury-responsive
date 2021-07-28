@@ -18,8 +18,14 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 1rem 2rem;
     /* margin-top: 2rem; */
+    background-color: #000;
+    
     z-index: 100;
     transition:all .3s ease-in-out;
     

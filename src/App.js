@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import About from './componants/About';
 import Dropdown from './componants/Dropdown';
 import GlobalStyle from './componants/globalStyles';
-import HeaderSlider from './componants/HeaderSlider';
+// import HeaderSlider from './componants/HeaderSlider';
 import Navbar from "./componants/Navbar";
 // import TopMenu from './componants/TopMenu';
 // import ServiceGallery from './componants/ServiceGallery';
@@ -20,6 +20,7 @@ import OfferPg from './pages/OfferPg';
 import Goals from './componants/Goals';
 import Stuff from './pages/Stuff';
 import Footer from './componants/Footer';
+import VideoHeader from './componants/VideoHeader';
 
 
 
@@ -130,7 +131,8 @@ function App() {
             {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
-            <HeaderSlider />
+            <VideoHeader />
+            {/* <HeaderSlider /> */}
             <SocialMain />
             <Goals />
             <About {...AboutData}/>

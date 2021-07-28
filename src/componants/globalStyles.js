@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
         html, body{
             overflow-x: hidden;
+            
           
             /* background-color: rgba(255, 253, 209, .3); */
             background-image: url(${MainBg});
