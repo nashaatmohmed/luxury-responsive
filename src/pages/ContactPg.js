@@ -6,6 +6,7 @@ import emailjs from 'emailjs-com';
 
 
 const Contact = styled.section`
+  
    label{
      font-weight: bold;
      color: #fff;
@@ -51,9 +52,9 @@ const ContactPg = () => {
             <div className="container">
             <form  onSubmit={sendEmail}>
               <div className="row pt-5 mx-auto">
-                <div className="d-none" name="book">
+                {/* <div className="d-none" name="book">
                   Booking Services Request
-                </div>
+                </div> */}
                 <div className="col-5 align-center form-group pt-2 mx-auto">
                   <label>Name</label>
                   <input type="text" className="form-control" placeholder="your name" name="name" />

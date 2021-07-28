@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import About from './componants/About';
 import Dropdown from './componants/Dropdown';
 import GlobalStyle from './componants/globalStyles';
-// import HeaderSlider from './componants/HeaderSlider';
+import HeaderSlider from './componants/HeaderSlider';
 import Navbar from "./componants/Navbar";
 // import TopMenu from './componants/TopMenu';
 // import ServiceGallery from './componants/ServiceGallery';
