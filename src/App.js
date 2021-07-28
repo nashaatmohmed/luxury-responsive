@@ -112,6 +112,7 @@ function App() {
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
+            <HeaderSlider />
             <BlogsPg />
             <Footer />
           </Route>
@@ -132,7 +133,7 @@ function App() {
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <VideoHeader />
-            {/* <HeaderSlider /> */}
+        
             <SocialMain />
             <Goals />
             <About {...AboutData}/>
