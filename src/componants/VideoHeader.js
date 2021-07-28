@@ -13,6 +13,10 @@ const VideoContainer = styled.div`
     position: relative;
     margin-top: 100px;
     color: #fff;
+
+    @media screen and (max-width: 768px){
+        height: 50vh;
+    }
     
 
     &:before{
