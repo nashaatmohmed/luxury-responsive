@@ -7,7 +7,11 @@ import Slide from 'react-reveal/Slide';
 const AboutSection = styled.section`
     width: 100%;
     height: 100%;
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 3rem 0rem;
+    }
 
 `;
 
@@ -69,10 +73,16 @@ const AboutLeft = styled.div`
         border-radius: 10%;
 
         
-    @media screen and (max-width: 768px) {
-       width: 90%;
-       height: 80%;
-    }
+        @media screen and (max-width: 768px) {
+        width: 70%;
+        height: 120%;
+        margin-top: 4rem;
+        }
+        @media screen and (max-width: 420px) {
+            width: 90%;
+            height: 100%;
+            margin-top: 2rem;
+        }
     }
 
 `;

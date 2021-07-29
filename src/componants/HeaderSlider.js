@@ -15,6 +15,8 @@ const Header = styled.div`
         height: 70vh; 
         position: relative;
         overflow: hidden;
+
+        
        
        
 

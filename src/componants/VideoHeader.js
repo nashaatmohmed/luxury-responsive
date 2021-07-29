@@ -9,13 +9,18 @@ const VideoContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 86vh;
+    width: 100%;
     padding:0 1rem;
     position: relative;
     margin-top: 100px;
     color: #fff;
 
-    @media screen and (max-width: 600px){
-        height: 60vh;
+    @media screen and (max-width: 768px){
+        height: 70vh;
+    }
+
+    @media screen and (max-width: 420px){
+        height: 50vh;
     }
     
 
@@ -26,6 +31,8 @@ const VideoContainer = styled.div`
         right:0;
         left:0;
         bottom:0;
+        width: 100%;
+        height: 100%;
         z-index: 2;
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
 

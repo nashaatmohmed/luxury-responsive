@@ -11,7 +11,7 @@ const DropdownContainer = styled.div`
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: #990404;
+    background-color: #630F00;
     display: grid;
     align-items: flex-start;
     top: 0;
@@ -53,14 +53,18 @@ const DropdownWrapper = styled.div`
 const DropdownMenu = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 80px);
+    grid-template-rows: repeat(5,120px);
     text-align: center;
     margin-bottom: 2rem;
  
     
 
-    @media screen and (max-width: 480px){
+     @media screen and (max-width: 480px){
         grid-template-rows: repeat(5, 100px);
+    } 
+
+    @media screen and (max-width: 380px){
+        grid-template-rows: repeat(4, 90px);
     }
 
 `;

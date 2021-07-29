@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import BrandLogo from '../images/logo.png';
 import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaPhoneAlt} from 'react-icons/fa';
 import { TiLocation } from "react-icons/ti";
+import MainBg from '../images/background-web.jpg'
 
 
 const FooterSection = styled.footer`
-    background-color: transparent;
+    background-image: url(${MainBg});
 
 `;
 
@@ -19,6 +20,10 @@ const FooterWrap = styled.div`
     align-items: center;
     /* max-width: 1100; */
     margin: 0 auto;
+
+    @media screen and (max-width: 768px){
+        padding-top: 0;
+    }
 
 `;
 
@@ -196,16 +201,16 @@ const Footer = () => {
                                 <FooterLink to="/">
                                     About Us
                                 </FooterLink>
-                                <FooterLink to="/">
+                                <FooterLink to="/Stuff">
                                     Our Team
                                 </FooterLink>
-                                <FooterLink to="/">
+                                <FooterLink to="/servicesPg">
                                     Services
                                 </FooterLink>
-                                <FooterLink to="/">
+                                <FooterLink to="/OfferPg">
                                     Offer
                                 </FooterLink>
-                                <FooterLink to="/">
+                                <FooterLink to="/ContactPg">
                                     Contact Us
                                 </FooterLink>
                         </FooterLinkItems>
@@ -214,11 +219,11 @@ const Footer = () => {
                             <FooterLinkTitle>
                                     Booking
                             </FooterLinkTitle>    
-                                <FooterLink to="/">
+                                <FooterLink to="/ContactPg">
                                     
                                     Book Special Offers
                                 </FooterLink>
-                                <FooterLink to="/">
+                                <FooterLink to="/ContactPg">
                                     book Services
                                 </FooterLink>
                                 {/* <FooterLink to="/">

@@ -24,7 +24,7 @@ const SocialWrapper = styled.section`
 
 
 const SocialTele = styled(Link)`
-    background: #990404;
+    background: #630F00;
     height: 40px;
     margin-bottom: 10px;
     display: flex;
@@ -53,7 +53,7 @@ const SocialTele = styled(Link)`
 `;
 
 const SocialWhats = styled(Link)`
-    background: #990404;
+    background: #630F00;
     height: 40px;
     margin-bottom: 10px;
     display: flex;

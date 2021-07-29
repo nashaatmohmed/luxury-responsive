@@ -6,10 +6,14 @@ import emailjs from 'emailjs-com';
 
 
 const Contact = styled.section`
+
+  form{
+    width: 100%;
+  }
   
    label{
      font-weight: bold;
-     color: #fff;
+     color: #000;
    }
 `;
 
@@ -41,6 +45,7 @@ const ContactPg = () => {
     emailjs.sendForm('service_57290uf', 'template_i3p28cm', e.target, 'user_atSwxTiSJfcdhAIgU5AWu')
     .then((result) => {
         console.log(result.text);
+        alert("submit sent");
     }, (error) => {
         console.log(error.text);
     });
@@ -49,7 +54,7 @@ const ContactPg = () => {
     return (
         <Contact>
            <ContactImg src={Head} alt="" />
-            <div className="container">
+            <div className="container-fluid">
             <form  onSubmit={sendEmail}>
               <div className="row pt-5 mx-auto">
                 {/* <div className="d-none" name="book">

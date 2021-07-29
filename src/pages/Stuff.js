@@ -25,9 +25,14 @@ const StuffHeader = styled.div`
 
 const StuufMainImg = styled.img`
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     object-fit: fill;
     filter: brightness(.7);
+    margin-top: 100px;
+
+    @media screen and (max-width : 768px){
+        height: 60vh;
+    }
     
 
 `;
@@ -37,9 +42,10 @@ const StuffWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
     align-items: center;
     padding: 0 20px;
+    margin: 50px auto;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -63,13 +69,16 @@ const StuffCard = styled.div`
     background-size: contain;
     max-height: 440px;
     max-width: 450px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
+    border-radius: 10px;
     
    
 
     img{
         width: 100%;
-        height: 60%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: fill;
     }
    
 
@@ -84,6 +93,7 @@ const Stuff = () => {
             </StuffHeader>
             <Tittle>
             Our Professional Masseuse
+            <p></p>
             </Tittle>
             <StuffWrapper>
                 <StuffCard>

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import MainBg from '../images/background-web.jpg'
+// 
 
 const GlobalStyle = createGlobalStyle`
     	*{
@@ -13,13 +13,14 @@ const GlobalStyle = createGlobalStyle`
             overflow-x: hidden;
             
           
-            /* background-color: rgba(255, 253, 209, .3); */
-            background-image: url(${MainBg});
+            background-color: #fff;
+           
+
             
         }
 
         .active{
-        background-color: rgba(0, 0, 0, .7) !important;
+            background-color: rgba(99, 15, 0, .8);
     }
        
 `;

@@ -9,15 +9,22 @@ import Slide from 'react-reveal/Slide';
 import CardBg from '../images/back-ground-card.webp';
 
 const TestimonialsContainer = styled.section`
-    height: 1000px;
+    /* height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-    /* #010606; */
+    align-items: center; */
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0rem;
 
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 768px){
+        padding: 0rem;
+    }
+    
+    
+
+    /* @media screen and (max-width: 1024px){
         height: 1200px;
         
     }
@@ -29,11 +36,9 @@ const TestimonialsContainer = styled.section`
 
     @media screen and (max-width: 580px){
         height: 2400px;
-    }
+    } */
 
-    .tittle{
-        color: #fff;
-    }
+    
 `;
 
 const TestimonialsWrapper = styled.div`
@@ -41,17 +46,17 @@ const TestimonialsWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: 20px;
     align-items: center;
     padding: 0 30px;
     margin-top: 50px;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 768px){
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
+    @media screen and (max-width: 420px){
+        grid-template-columns: 1fr ;
         padding: 0 20px;
     }
 
@@ -59,7 +64,8 @@ const TestimonialsWrapper = styled.div`
 
 const TestimonialsCard = styled.div`
     background-image: url(${CardBg});
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -126,7 +132,7 @@ const TestimonialsText = styled.small`
 const Testimonials = () => {
     return (
         <TestimonialsContainer>
-            <Tittle className="tittle">
+            <Tittle>
                 Covid - 19
                 <p>our protection rules !!</p>
             </Tittle>

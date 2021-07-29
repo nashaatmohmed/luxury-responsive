@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 
 export const Button = styled(Link)`
 
-    background: ${({primary}) => (primary ? '#990404' : '#fff')};
+    background: ${({primary}) => (primary ? '#630F00' : '#fff')};
     white-space: nowrap;
     outline: none;
-    border: 2px solid #990404;
+    border: 2px solid #630F00;
     border-radius: 20px;
     min-width: 100px;
     max-width: 300px;
@@ -25,7 +25,7 @@ export const Button = styled(Link)`
     &:hover{
         transform: translateY(-2px);
         border: none;
-        background: #990404;
+        background: #630F00;
         color: #fff;
         text-decoration: none;
     }

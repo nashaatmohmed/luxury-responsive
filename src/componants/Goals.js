@@ -23,11 +23,17 @@ const GoalsSection = styled.section`
 
     @media screen and (max-width: 768px){
         height: 900px;
+        margin-top: 0;
+        padding-bottom: 0rem;
+        
+     
         
     }
 
     @media screen and (max-width: 580px){
         height: 1000px;
+        padding-bottom: 1rem;
+        margin-top: 50px;
     }
 `;
 
@@ -43,19 +49,22 @@ const GoalsWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: 20px;
     align-items: center;
     padding: 0 20px;
   
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 768px){
         grid-template-columns: 1fr 1fr;
-        margin-top: 50px;
+       
+        /* width: 70%;
+        margin-top: 2rem; */
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 420px){
         grid-template-columns: 1fr;
         padding: 0 20px;
+        margin-top: 50px;
     }
 
 `;
@@ -70,7 +79,8 @@ const GoalsCard = styled.div`
     max-height: 340px;
     padding: 20px;
     background-image: url(${CardBg});
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 3px 6px rgba(0,0,0,1); 
     transition: all 0.2s ease-in-out;
     margin-right: 5px;

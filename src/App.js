@@ -111,8 +111,8 @@ function App() {
             {/* <TopMenu />           */}
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
-            <SocialMain />
             <HeaderSlider />
+            <SocialMain />
             <BlogsPg />
             <Footer />
           </Route>
@@ -133,7 +133,7 @@ function App() {
             <Navbar toggle={toggle}/>
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <VideoHeader />
-        
+            
             <SocialMain />
             <Goals />
             <About {...AboutData}/>

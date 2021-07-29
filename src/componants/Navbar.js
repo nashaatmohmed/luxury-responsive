@@ -24,7 +24,7 @@ const Nav = styled.nav`
     bottom: 0;
     padding: 1rem 2rem;
     /* margin-top: 2rem; */
-    background-color: #000;
+    background-color: rgba(99, 15, 0, 1);
     
     z-index: 100;
     transition:all .3s ease-in-out;
@@ -114,7 +114,7 @@ const NavMenuLinks = styled(Link)`
     }
 
     &:hover{
-        color: #990404;
+        color: #1C0200;
         font-weight: bold;
 
             &::before{
@@ -124,7 +124,7 @@ const NavMenuLinks = styled(Link)`
             left: 16px;
             width: 25%;
             height: 2px;
-            background-color: #990404;
+            background-color: #1C0200;
         }
     }
 `;
