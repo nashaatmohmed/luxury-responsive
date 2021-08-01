@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled,{css} from 'styled-components';
 import {Link} from 'react-router-dom';
-import BrandLogo from '../images/logo.png';
+import BrandLogo from '../images/logo2.png';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
 import Bars from '../images/menu.svg';
@@ -24,7 +24,7 @@ const Nav = styled.nav`
     bottom: 0;
     padding: 1rem 2rem;
     /* margin-top: 2rem; */
-    background-color: rgba(99, 15, 0, 1);
+    background-color:#260500;
     
     z-index: 100;
     transition:all .3s ease-in-out;
@@ -32,6 +32,7 @@ const Nav = styled.nav`
 
     @media screen and (max-width : 768px){
         margin-top: 0rem;
+        height: 80px;
     }
 
    
@@ -56,8 +57,13 @@ const Logo = styled(Link)`
 
     img{
         object-fit: cover;
-        width: 90px;
-        height: 70px;
+        width: 80px;
+        height: 60px;
+
+        @media screen and (max-width : 768px){
+        width: 60px;
+        height: 40px;
+    }
     }
     
 `;
@@ -69,8 +75,8 @@ const NavBars = styled.i`
         display: block;
         background-image: url(${Bars});
         background-size: contain;
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         cursor: pointer;
         position: absolute;
         top: 20px;

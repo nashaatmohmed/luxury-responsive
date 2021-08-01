@@ -99,16 +99,18 @@ const GoalsCard = styled.div`
 `;
 
 const GoalsIcon = styled.img`
-    height: 160px;
-    width: 100%;
-    margin-bottom: 10px;
+    height: 180px;
+    width: 96%;
+    margin: 10px auto 7px;
+
+    
 `;
 
 const GoalsHeading = styled(Link)`
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
     margin-bottom: 1rem;
     transition: 0.3s ease-in-out;
 
@@ -146,7 +148,7 @@ const Goals = () => {
                     <GoalsCard>                  
                         <GoalsIcon src={Icon2}/>
                         <GoalsHeading to="/Stuff">
-                        Our Professional Massuse
+                        Professional Massuse
 
                         </GoalsHeading>
                     

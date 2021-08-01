@@ -8,7 +8,7 @@ const VideoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 75vh;
     width: 100%;
     padding:0 1rem;
     position: relative;
@@ -20,11 +20,14 @@ const VideoContainer = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        height: 40vh;
+        height: 38vh;
+        margin-top: 80px;
+
     }
 
     @media screen and (max-width: 420px){
-        height: 30vh;
+        height: 25vh;
+        margin-top: 80px;
     }
     
 

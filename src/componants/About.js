@@ -41,7 +41,8 @@ const AboutRight = styled.div`
     h1{
         margin-bottom: 1rem;
         font-size: clamp(1.5rem, 6vw, 2rem);
-        color: #fff;
+        color: transparent;
+
     }
     p{
         margin-bottom: 2.5rem;
