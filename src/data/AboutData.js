@@ -1,4 +1,4 @@
-import ImageOne from '../images/header2.jpg';
+import ImageOne from '../images/about1.webp';
 
 
 export const AboutData = {

@@ -8,7 +8,7 @@ const VideoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 86vh;
     width: 100%;
     padding:0 1rem;
     position: relative;

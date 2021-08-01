@@ -53,16 +53,16 @@ const NavLinks = css`
 `;
 
 const Logo = styled(Link)`
-    ${NavLinks}
+   padding: 0 1rem;
 
     img{
         object-fit: cover;
-        width: 80px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
 
         @media screen and (max-width : 768px){
-        width: 60px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     }
     
