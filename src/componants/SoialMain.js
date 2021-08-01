@@ -6,6 +6,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import { Link } from 'react-router-dom';
 
 
+
 const SocialContainer = styled.section`
     position: fixed;
     bottom: 19%;
@@ -118,8 +119,12 @@ const SoialMain = () => {
                     <span>+971528082776</span>
                 </SocialTele>
             
-                <SocialWhats to="/">
+                <SocialWhats>
+                   
                     <WhatsAppIcon style={{ fontSize: 30 }}/>
+                    
+                   
+
                     <span>Massage Us</span>
                 </SocialWhats>
 

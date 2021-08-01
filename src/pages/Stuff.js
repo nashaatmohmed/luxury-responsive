@@ -33,6 +33,10 @@ const StuufMainImg = styled.img`
     @media screen and (max-width : 768px){
         height: 60vh;
     }
+
+    @media screen and (max-width : 420px){
+        height: 40vh;
+    }
     
 
 `;
@@ -89,7 +93,7 @@ const Stuff = () => {
     return (
         <StuffSection>
             <StuffHeader>
-                <StuufMainImg src={ImageOne} alt="" />
+                <StuufMainImg src={ImageOne} alt="head-pic" />
             </StuffHeader>
             <Tittle>
             Our Professional Masseuse
@@ -97,19 +101,19 @@ const Stuff = () => {
             </Tittle>
             <StuffWrapper>
                 <StuffCard>
-                    <img src={Stuff1} alt="" />
+                    <img src={Stuff1} alt="num-1" />
                 </StuffCard>
                 <StuffCard>
-                    <img src={Stuff2} alt="" />
+                    <img src={Stuff2} alt="num-2" />
                 </StuffCard>
                 <StuffCard>
-                    <img src={Stuff3} alt="" />
+                    <img src={Stuff3} alt="num-3" />
                 </StuffCard>
                 <StuffCard>
-                    <img src={Stuff4} alt="" />
+                    <img src={Stuff4} alt="num-4" />
                 </StuffCard>
                 <StuffCard>
-                    <img src={Stuff5} alt="" />
+                    <img src={Stuff5} alt="num-5" />
                 </StuffCard>
             </StuffWrapper>
             

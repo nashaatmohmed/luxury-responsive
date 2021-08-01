@@ -6,6 +6,7 @@ import { Button } from './Button';
 import { Tittle } from './Tittle';
 import Fade from 'react-reveal/Fade';
 import CardBg from '../images/back-ground-card.webp';
+import { Link } from 'react-router-dom';
 
 
 
@@ -53,8 +54,12 @@ const ServiceCol = styled.div`
 
 `;
 
-const ServiceItemCard = styled.div`
-
+const ServiceItemCard = styled(Link)`
+    color: #fff;
+      &:hover{
+            text-decoration: none;
+            color: #fff;
+        }
 
 `;
 
@@ -91,7 +96,7 @@ const CardItems = styled.div`
         }
     }
     @media screen and (max-width : 600px){
-        height: 80vh !important;
+        height: 82vh !important;
         .btn{
            
             margin-left: 2rem;
@@ -99,7 +104,7 @@ const CardItems = styled.div`
     }
 
     @media screen and (max-width : 450px){
-        height: 80vh !important;
+        height: 83vh !important;
         .btn{
             margin-top: 3rem;
             margin-left: 0rem;
@@ -108,7 +113,7 @@ const CardItems = styled.div`
     }
 
     @media screen and (max-width : 380px){
-        height: 85vh !important;
+        height: 87vh !important;
         .btn{
             margin-top: 0rem;
             margin-left: 0rem;
@@ -151,7 +156,7 @@ const CardInfo = styled.div`
 
         height: 50%;
         width: 100%;
-        
+        text-decoration: none;
         text-align: center;
 
         .name-tittle{
@@ -162,7 +167,7 @@ const CardInfo = styled.div`
             white-space: nowrap;
             font-size: clamp(1rem, 6vw, 1.5rem);
             font-weight: bold;
-            color: #990404;
+            color: #fff;
            
             
         }
@@ -186,6 +191,7 @@ const CardInfo = styled.div`
             text-decoration: none;
             
         }
+      
 `;
 
 
@@ -232,7 +238,7 @@ const ServiceGallery = () => {
 
                                     return (
                                     
-                                        <ServiceItemCard className="item1 col-12 col-md-6 col-lg-6 col-xl-4 my-5">
+                                        <ServiceItemCard to="/ProudctDetails" className="item1 col-12 col-md-6 col-lg-6 col-xl-4 my-5">
                                             <Fade bottom>
                                                 <CardItems className="row Item-inside">
                                                     {/* for images */}
@@ -244,7 +250,8 @@ const ServiceGallery = () => {
                                                     <CardInfo className="col-12 col-md-12 col-lg-12">
                                                         <div className="main-title mt-2">
                                                             <div className="name-tittle">
-                                                                <h3>{name}</h3>                                                           
+                                                                <h3>{name}</h3>
+
                                                                 <i>{small}</i>
 
                                                             </div>                                                                                                              

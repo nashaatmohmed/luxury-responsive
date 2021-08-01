@@ -29,18 +29,18 @@ const OfferHeader = styled.div`
 
 const OfferMainImg = styled.img`
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     object-fit: fill;
     filter: brightness(.7);
     margin-top: 100px;
 
     
-    @media screen and (max-width: 768px){
-        height: 70vh;
+    @media screen and (max-width : 768px){
+        height: 60vh;
     }
 
-    @media screen and (max-width: 420px){
-        height: 50vh;
+    @media screen and (max-width : 420px){
+        height: 40vh;
     }
 
 `;
@@ -131,7 +131,7 @@ const OfferPg = () => {
     return (
         <OfferSection>
             <OfferHeader>
-                <OfferMainImg src={ImageOne} alt="" />
+                <OfferMainImg src={ImageOne} alt="head-pic" />
             </OfferHeader>
             <Tittle>
             Our Special Offer

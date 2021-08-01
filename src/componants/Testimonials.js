@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Tittle } from './Tittle';
-import Icon1 from '../images/covid1.jpg';
-import Icon2 from '../images/header2.jpg';
-import Icon3 from '../images/header3.jpg';
+import Icon1 from '../images/covid-1.jpg';
+import Icon2 from '../images/covid-2.jpg';
+import Icon3 from '../images/covid-3.jpg';
+import Icon4 from '../images/covid-4.jpg';
+import Icon5 from '../images/covid-5.jpg';
+import Icon6 from '../images/covid-6.jpg';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import CardBg from '../images/back-ground-card.webp';
@@ -180,7 +183,7 @@ const Testimonials = () => {
 
                 <Slide left>
                     <TestimonialsCard>                  
-                        <TestimonialsIcon src={Icon3}/>
+                        <TestimonialsIcon src={Icon4}/>
                         <TestimonialsHeading>
                         Luxury Arap Spa
                         </TestimonialsHeading>
@@ -192,7 +195,7 @@ const Testimonials = () => {
 
                 <Fade bottom>
                     <TestimonialsCard>                  
-                        <TestimonialsIcon src={Icon3}/>
+                        <TestimonialsIcon src={Icon5}/>
                         <TestimonialsHeading>
                         Luxury Arap Spa
                         </TestimonialsHeading>
@@ -204,7 +207,7 @@ const Testimonials = () => {
 
                 <Slide right>
                     <TestimonialsCard>                  
-                        <TestimonialsIcon src={Icon3}/>
+                        <TestimonialsIcon src={Icon6}/>
                         <TestimonialsHeading>
                         Luxury Arap Spa
                         </TestimonialsHeading>

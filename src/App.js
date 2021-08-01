@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import About from './componants/About';
 import Dropdown from './componants/Dropdown';
 import GlobalStyle from './componants/globalStyles';
@@ -14,13 +14,14 @@ import BlogsPg from './pages/BlogsPg';
 import ContactPg from './pages/ContactPg';
 import Testimonials from './componants/Testimonials';
 import SocialMain from './componants/SoialMain';
-import PropagateLoader from "react-spinners/PropagateLoader";
+// import PropagateLoader from "react-spinners/PropagateLoader";
 import "../src/App.css";
 import OfferPg from './pages/OfferPg';
 import Goals from './componants/Goals';
 import Stuff from './pages/Stuff';
 import Footer from './componants/Footer';
 import VideoHeader from './componants/VideoHeader';
+// import ProductDetails from './componants/ProductDetails';
 
 
 
@@ -31,26 +32,27 @@ import VideoHeader from './componants/VideoHeader';
 
 
 function App() {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() =>{
-      setLoading(true)
-      setTimeout(() =>{
-        setLoading(false)
-      },3000)
-  },[]);
+  // useEffect(() =>{
+  //     setLoading(true)
+  //     setTimeout(() =>{
+  //       setLoading(false)
+  //     },3000)
+  // },[]);
 
  
   return (
 
     <div className="app">
-      {loading ? (
+      {/* {loading ? (
       
       <PropagateLoader
 
@@ -60,7 +62,7 @@ function App() {
        speedMultiplier={1.5} 
       /> )
 
-      : (
+      : ( */}
     <Router>
      
       <Switch>
@@ -106,6 +108,10 @@ function App() {
             <Footer />
           </Route>
 
+          {/* <Route>
+            <ProductDetails />
+          </Route> */}
+
           <Route path="/BlogsPg">
             <GlobalStyle />
             {/* <TopMenu />           */}
@@ -144,7 +150,7 @@ function App() {
       </Switch>
 
     </Router>
-      )}
+     
     </div>
   );
 }

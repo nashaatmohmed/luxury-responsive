@@ -84,6 +84,14 @@ const FooterLinkTitle = styled.h2`
 
 `;
 
+const FooterAdress = styled.p`
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    line-height: 2;
+`;
+
 const FooterLink = styled(Link)`
     
     color: #fff;
@@ -93,8 +101,9 @@ const FooterLink = styled(Link)`
     line-height: 2;
 
     &:hover{
-        color: #01bf71;
+        color: red;
         transition: 0.3s ease-out;
+        text-decoration: none;
     }
 `;
 
@@ -166,12 +175,12 @@ const Footer = () => {
                                
                                     Adress
                             </FooterLinkTitle>    
-                                <FooterLink to="/">
+                                <FooterAdress>
                                 - Kuwait Road, Al Mankhool, Burdubai <br/> Dubai - United Arab Emirates
-                                </FooterLink>
-                                <FooterLink to="/">
+                                </FooterAdress>
+                                <FooterAdress>
                                 - Grand Excelsior Hotel Bur Dubai <br/>Free Parking
-                                </FooterLink>
+                                </FooterAdress>
                                  <FooterLink to="/">
                                     <span className="mr-3">
                                      <FaPhoneAlt />

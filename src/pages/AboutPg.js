@@ -18,7 +18,7 @@ const AboutImg = styled.img`
 const AboutPg = () => {
     return (
         <About>
-            <AboutImg src={Head} alt="" />
+            <AboutImg src={Head} alt="head-pic" />
         </About>
     )
 }
