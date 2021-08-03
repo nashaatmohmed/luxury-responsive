@@ -68,20 +68,20 @@ const AboutLeft = styled.div`
     }
 
     img{
-        width: 100%;
-        height: 90%;
+        width: 85%;
+        height: 80%;
         object-fit: fill;
         border-radius: 10px;
 
         
         @media screen and (max-width: 768px) {
-        width: 70%;
-        height: 120%;
-        margin-top: 4rem;
+            width: 75%;
+            height: 123%;
+            margin-top: 4rem;
         }
         @media screen and (max-width: 420px) {
             width: 90%;
-            height: 100%;
+            height: 73%;
             margin-top: 2rem;
         }
     }

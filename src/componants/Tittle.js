@@ -23,7 +23,7 @@ export const Tittle = styled.h3`
         position: absolute;
         bottom: -15px;
         left: 47.3%;
-        background-color: rgba(99, 15, 0, 1);
+        background-color: #A88E6F;
         z-index: 2;
     }
     }

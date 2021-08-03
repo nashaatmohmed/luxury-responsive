@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../componants/Button';
 import { Tittle } from '../componants/Tittle';
-import ImageOne from '../images/slides.webp';
+import ImageOne from '../images/special-offer.jpg';
 import Stuff1 from '../images/75-min-Moroccan-bath-with-arabic-massage-350-AEDluxury-arab-spa-best-massage-in-d.jpg';
 import Stuff2 from '../images/turkish-bath-with-massage-luxury-arab-spa-Best-massage-in-dubai.jpg';
 import Stuff3 from '../images/maincur-pedicure-face-mask-foot-massage-luxury-sp-arab--in-ubai-d.jpg';
@@ -10,6 +10,7 @@ import Stuff4 from '../images/Massage-Manicure-pedicure-face-mask--luxury-arab-s
 import Stuff5 from '../images/2-hr-massage-with-moproccan-bath-luxury-arab-spa-best-massage-in-dubai.jpg';
 import Stuff6 from '../images/2hr Royal package.jpg';
 import CardBg from '../images/back-ground-card.webp';
+import HeadLeft from '../images/background-web.jpg';
 
 const OfferSection = styled.section`
     display: flex;
@@ -22,6 +23,9 @@ const OfferSection = styled.section`
 const OfferHeader = styled.div`
   
     display: block;
+    background-image: url(${HeadLeft});
+    width: 100%;
+    height: 100%;
 
    
 
@@ -29,10 +33,10 @@ const OfferHeader = styled.div`
 
 const OfferMainImg = styled.img`
     width: 100%;
-    height: 85vh;
-    object-fit: fill;
-    filter: brightness(.7);
-    margin-top: 100px;
+    height: 71vh;
+    object-fit: contain;
+    /* filter: brightness(.5); */
+    margin-top: 80px;
 
     
     @media screen and (max-width : 768px){

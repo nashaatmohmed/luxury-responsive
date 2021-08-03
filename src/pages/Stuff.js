@@ -25,17 +25,17 @@ const StuffHeader = styled.div`
 
 const StuufMainImg = styled.img`
     width: 100%;
-    height: 85vh;
-    object-fit: fill;
-    filter: brightness(.7);
-    margin-top: 100px;
+    height: 71vh;
+    object-fit: cover;
+    /* filter: brightness(.7); */
+    margin-top: 80px;
 
     @media screen and (max-width : 768px){
-        height: 60vh;
+        height: 29vh;
     }
 
     @media screen and (max-width : 420px){
-        height: 40vh;
+        height: 22vh;
     }
     
 
@@ -51,12 +51,12 @@ const StuffWrapper = styled.div`
     padding: 0 20px;
     margin: 50px auto;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 768px){
         grid-template-columns: 1fr 1fr;
     
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 420px){
         grid-template-columns: 1fr;
         padding: 0 20px;
     }

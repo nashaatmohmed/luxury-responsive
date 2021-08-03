@@ -10,7 +10,7 @@ import Bars from '../images/menu.svg';
 
 const Nav = styled.nav`
 
-    height: 100px;
+    height: 80px;
     width: 100%;
     display: flex;
     background-color: transparent;
@@ -57,13 +57,13 @@ const Logo = styled(Link)`
 
     img{
         object-fit: cover;
-        width: 70px;
-        height: 70px;
+        width: 59px;
+        height: 68px;
 
-        @media screen and (max-width : 768px){
-        width: 50px;
-        height: 50px;
-    }
+    @media screen and (max-width : 768px){
+            width: 60px;
+            height: 74px;
+        }
     }
     
 `;
@@ -120,7 +120,7 @@ const NavMenuLinks = styled(Link)`
     }
 
     &:hover{
-        color: #1C0200;
+        color: #A88E6F;
         font-weight: bold;
 
             &::before{
@@ -130,7 +130,7 @@ const NavMenuLinks = styled(Link)`
             left: 16px;
             width: 25%;
             height: 2px;
-            background-color: #1C0200;
+            background-color: #A88E6F;
         }
     }
 `;

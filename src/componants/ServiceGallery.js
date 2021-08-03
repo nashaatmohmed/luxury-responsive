@@ -261,7 +261,7 @@ const ServiceGallery = () => {
                                                             <div className="price-book-divide d-flex">
                                                                 <h4>Price : {price}</h4>
                                                             
-                                                                <Button to="/ServicesPg" className="btn" primary="true">Order Now</Button>
+                                                                <Button to="/ServicesPg" className="btn" >Order Now</Button>
                                                                 
                                                             </div>
                                                             
