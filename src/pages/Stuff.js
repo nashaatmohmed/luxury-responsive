@@ -8,6 +8,8 @@ import Stuff3 from '../images/stuff3.jpg';
 import Stuff4 from '../images/stuff4.jpg';
 import Stuff5 from '../images/stuff5.jpg';
 import CardBg from '../images/back-ground-card.webp';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const StuffSection = styled.section`
     display: flex;
@@ -100,21 +102,31 @@ const Stuff = () => {
             <p></p>
             </Tittle>
             <StuffWrapper>
-                <StuffCard>
-                    <img src={Stuff1} alt="num-1" />
-                </StuffCard>
-                <StuffCard>
-                    <img src={Stuff2} alt="num-2" />
-                </StuffCard>
-                <StuffCard>
-                    <img src={Stuff3} alt="num-3" />
-                </StuffCard>
-                <StuffCard>
-                    <img src={Stuff4} alt="num-4" />
-                </StuffCard>
-                <StuffCard>
-                    <img src={Stuff5} alt="num-5" />
-                </StuffCard>
+                <Slide left>
+                    <StuffCard>
+                        <img src={Stuff1} alt="num-1" />
+                    </StuffCard>
+                </Slide>
+                <Fade top>
+                    <StuffCard>
+                        <img src={Stuff2} alt="num-2" />
+                    </StuffCard>
+                </Fade>
+                <Slide right>
+                    <StuffCard>
+                        <img src={Stuff3} alt="num-3" />
+                    </StuffCard>
+                </Slide>
+                <Slide bottom>
+                    <StuffCard>
+                        <img src={Stuff4} alt="num-4" />
+                    </StuffCard>
+                </Slide>
+                <Slide right>
+                    <StuffCard>
+                        <img src={Stuff5} alt="num-5" />
+                    </StuffCard>
+                </Slide>
             </StuffWrapper>
             
         </StuffSection>

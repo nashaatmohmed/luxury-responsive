@@ -6,6 +6,8 @@ import Icon2 from '../images/service.gif';
 import Icon3 from '../images/speci.gif';
 import CardBg from '../images/back-ground-card.webp';
 import { Tittle } from './Tittle';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const GoalsSection = styled.section`
     height: 500px;
@@ -140,42 +142,49 @@ const Goals = () => {
             </Tittle>
             <GoalsWrapper>
                 <GoalLink to="/OfferPg">
-                    <GoalsCard>                  
-                        <GoalsIcon src={Icon1}/>
-                        <GoalsHeading to="/OfferPg">
-                        Special Offers
-                        </GoalsHeading>
-                    
-                        <GoalsText>
-                        We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
-                        </GoalsText>
-                    </GoalsCard>
+                    <Slide right>
+                        <GoalsCard>                  
+                            <GoalsIcon src={Icon1}/>
+                            <GoalsHeading to="/OfferPg">
+                            Special Offers
+                            </GoalsHeading>
+                        
+                            <GoalsText>
+                            We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
+                            </GoalsText>
+                        </GoalsCard>
+                    </Slide>
+
                 </GoalLink>
                 <GoalLink to="/Stuff">
-                    <GoalsCard>                  
-                        <GoalsIcon src={Icon2}/>
-                        <GoalsHeading to="/Stuff">
-                        Professional Massuse
+                    <Fade bottom>
+                        <GoalsCard>                  
+                            <GoalsIcon src={Icon2}/>
+                            <GoalsHeading to="/Stuff">
+                            Professional Massuse
 
-                        </GoalsHeading>
-                    
-                        <GoalsText>
-                        We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
-                        </GoalsText>
-                    </GoalsCard>
+                            </GoalsHeading>
+                        
+                            <GoalsText>
+                            We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
+                            </GoalsText>
+                        </GoalsCard>
+                    </Fade>
                 </GoalLink>
                 <GoalLink to="/ServicesPg">
-                    <GoalsCard>                  
-                        <GoalsIcon src={Icon3}/>
-                        <GoalsHeading to="/ServicesPg">
-                        Our Service
+                    <Slide left>
+                        <GoalsCard>                  
+                            <GoalsIcon src={Icon3}/>
+                            <GoalsHeading to="/ServicesPg">
+                            Our Service
 
-                        </GoalsHeading>
-                    
-                        <GoalsText>
-                        We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
-                        </GoalsText>
-                    </GoalsCard>
+                            </GoalsHeading>
+                        
+                            <GoalsText>
+                            We provide hand sanitizers at the front desk, and sterilize credit card machines, tables, and more.
+                            </GoalsText>
+                        </GoalsCard>
+                    </Slide>
                 </GoalLink>
             </GoalsWrapper>
                    

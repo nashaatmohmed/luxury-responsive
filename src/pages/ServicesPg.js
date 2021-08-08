@@ -77,7 +77,7 @@ const ServiceInfo = styled.div`
         margin-bottom: auto;
         height: 200px;
         
-        @media screen and (max-width : 1024px){
+    @media screen and (max-width : 1024px){
             margin-bottom: 100px;
     }
 

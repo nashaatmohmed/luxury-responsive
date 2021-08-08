@@ -5,6 +5,7 @@ import Menu from '../data/ServiceData';
 import { Button } from './Button';
 import { Tittle } from './Tittle';
 import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 import CardBg from '../images/back-ground-card.webp';
 import { Link } from 'react-router-dom';
 
@@ -132,46 +133,48 @@ const ServiceGallery = () => {
 
                                         <ServiceItemCard key={elem.id} className="col-xl-4 col-l-4 col-md-6 col-sm-12">
                                             <CardItems >
-                                                <Card className="card">
-                                                    
-                                                    <CardInfo class>
-                                                        <CardImage className="img-div">
-                                                            <img src={image} alt={name} />
-                                                        </CardImage>
-                                                        <div className="name-tittle">
-                                                            <h3>{name}</h3>
+                                                <Slide bottom>
+                                                    <Card className="card">
+                                                        
+                                                        <CardInfo class>
+                                                            <CardImage className="img-div">
+                                                                <img src={image} alt={name} />
+                                                            </CardImage>
+                                                            <div className="name-tittle">
+                                                                <h3>{name}</h3>
 
-                                                            <i>{small}</i>
-                                                        </div>
-                                                        <div className="info">
-                                                            <p>{description }</p>
-                                                            <h4>Price : {price}</h4>
+                                                                <i>{small}</i>
+                                                            </div>
+                                                            <div className="info">
+                                                                <p>{description }</p>
+                                                                <h4>Price : {price}</h4>
+                                                                    
+                                                            </div>
+                                                            <div className="price-book-divide d-flex">
+                                                                <Button className="btn" >Book Now</Button>
                                                                 
-                                                        </div>
-                                                        <div className="price-book-divide d-flex">
-                                                            <Button className="btn" >Book Now</Button>
-                                                            
-                                                        </div> 
-                                                    </CardInfo>
-                                                    <CardBackFace>
-                                                        <TotalTime>
-                                                            {time}
+                                                            </div> 
+                                                        </CardInfo>
+                                                        <CardBackFace>
+                                                            <TotalTime>
+                                                                {time}
 
-                                                        </TotalTime>
-                                                        <Descrip>
-                                                            <p>
-                                                                {info}
-                                                            </p>
-                                                        </Descrip>
-                                                        {/* <div className="price-book-divide d-flex">
-                                                            <Button  className="btn" >Book Now</Button>
-                                                            <Button className="btn" onClick={toggleSwitch}>More details..</Button>
-                                                            
-                                                        </div> */}
+                                                            </TotalTime>
+                                                            <Descrip>
+                                                                <p>
+                                                                    {info}
+                                                                </p>
+                                                            </Descrip>
+                                                            {/* <div className="price-book-divide d-flex">
+                                                                <Button  className="btn" >Book Now</Button>
+                                                                <Button className="btn" onClick={toggleSwitch}>More details..</Button>
+                                                                
+                                                            </div> */}
 
-                                                            
-                                                    </CardBackFace> 
-                                                </Card>
+                                                                
+                                                        </CardBackFace> 
+                                                    </Card>
+                                                </Slide>
                                                 
                                                
                                                  
