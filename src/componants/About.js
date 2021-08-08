@@ -13,6 +13,10 @@ const AboutSection = styled.section`
         padding: 3rem 0rem;
     }
 
+    @media screen and (max-width: 420px) {
+      margin-top: 8rem;
+    }
+
 `;
 
 const AboutContainer = styled.div`
@@ -41,7 +45,7 @@ const AboutRight = styled.div`
     h1{
         margin-bottom: 1rem;
         font-size: clamp(1.5rem, 6vw, 2rem);
-        color: transparent;
+        color: rgba(99, 15, 0, .8);
 
     }
     p{

@@ -24,6 +24,7 @@ const OfferHeader = styled.div`
   
     display: block;
     background-image: url(${HeadLeft});
+    
     width: 100%;
     height: 100%;
 
@@ -149,7 +150,8 @@ const OfferPg = () => {
                     <div className="btn">
                     <Button  className="mr-3">Book Now</Button>
                     <Button primary="true">More Details</Button>
-                    </div>                </OfferCard>
+                    </div>                
+                </OfferCard>
                 <OfferCard>
                     <h4>75 Min Turkish Hammam<br/> Bath Massage</h4>
                     <img src={Stuff2} alt="" />
@@ -157,7 +159,8 @@ const OfferPg = () => {
                     <div className="btn">
                     <Button  className="mr-3">Book Now</Button>
                     <Button primary="true">More Details</Button>
-                    </div>                </OfferCard>
+                    </div>                
+                </OfferCard>
                 <OfferCard>
                     <h4>Manicure Pedicure Face Mask<br/> Foot Massage</h4>
                     <img src={Stuff3} alt="" />
@@ -166,7 +169,8 @@ const OfferPg = () => {
                     <Button  className="mr-3">Book Now</Button>
 
                     <Button primary="true">More Details</Button>
-                    </div>                </OfferCard>
+                    </div>                
+                </OfferCard>
                 <OfferCard>
                     <h4>Massage Manicure Pedicure<br/> Face Mask</h4>
                     <img src={Stuff4} alt="" />
@@ -174,7 +178,8 @@ const OfferPg = () => {
                     <div className="btn">
                     <Button  className="mr-3">Book Now</Button>
                     <Button primary="true">More Details</Button>
-                    </div>                </OfferCard>
+                    </div>                
+                </OfferCard>
                 <OfferCard>
                     <h4>2 HR Massage with <br/>Moroccan Bath</h4>
                     <img src={Stuff5} alt="" />
@@ -182,7 +187,8 @@ const OfferPg = () => {
                     <div className="btn">
                     <Button  className="mr-3">Book Now</Button>
                     <Button primary="true">More Details</Button>
-                    </div>                </OfferCard>
+                    </div>                
+                </OfferCard>
                 <OfferCard>
                     <h4>2 HR Royal<br/> Package</h4>
                     <img src={Stuff6} alt="" />

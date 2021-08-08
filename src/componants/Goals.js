@@ -5,14 +5,16 @@ import Icon1 from '../images/light1.gif';
 import Icon2 from '../images/service.gif';
 import Icon3 from '../images/speci.gif';
 import CardBg from '../images/back-ground-card.webp';
+import { Tittle } from './Tittle';
 
 const GoalsSection = styled.section`
     height: 500px;
-    display: flex;
+    width: 100%;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    align-items: center; */
+
     
     /* #010606; */
 
@@ -131,6 +133,11 @@ const GoalsText = styled.p`
 const Goals = () => {
     return (
         <GoalsSection>
+
+            <Tittle>
+                Category
+                <p>Get massage</p>
+            </Tittle>
             <GoalsWrapper>
                 <GoalLink to="/OfferPg">
                     <GoalsCard>                  

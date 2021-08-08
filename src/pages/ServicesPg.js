@@ -49,6 +49,10 @@ const ServiceImg = styled.img`
     @media screen and (max-width : 768px){
         height: 60vh;
     }
+
+    @media screen and (max-width : 420px){
+        height: 50vh;
+    }
 `;
 
 const ServiceLeft = styled.div`

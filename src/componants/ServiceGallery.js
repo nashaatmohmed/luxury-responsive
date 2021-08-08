@@ -54,145 +54,9 @@ const ServiceCol = styled.div`
 
 `;
 
-const ServiceItemCard = styled(Link)`
-    color: #fff;
-      &:hover{
-            text-decoration: none;
-            color: #fff;
-        }
 
-`;
 
-const CardItems = styled.div`
 
-    background-image: url(${CardBg});
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 1rem;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
-    
-
-    @media screen and (max-width : 1024px){
-        height: 50vh;
-        .btn{
-            margin-top: 3rem;
-            margin-left: 1.5rem;
-        }
-    }
-
-    @media screen and (max-width : 768px){
-        height: 60vh ;
-        .btn{
-            margin-top: 2rem;
-            margin-left: 0rem;
-        }
-    }
-    @media screen and (max-width : 600px){
-        height: 82vh !important;
-        .btn{
-           
-            margin-left: 2rem;
-        }
-    }
-
-    @media screen and (max-width : 450px){
-        height: 83vh !important;
-        .btn{
-            margin-top: 3rem;
-            margin-left: 0rem;
-        }
-
-    }
-
-    @media screen and (max-width : 380px){
-        height: 87vh !important;
-        .btn{
-            margin-top: 0rem;
-            margin-left: 0rem;
-        }
-    }
-    @media screen and (max-width : 320px){
-        height: 100vh !important;
-        .btn{
-            margin-top: 0rem;
-            margin-left: 0rem;
-        }
-    }
-`;
-
-const CardImage = styled.div`
-    padding: 0;
-    position: relative;
-    bottom: 10px;
-    transition: .3s ease-in-out;
-    overflow: hidden; 
-    
-
-    img{
-        width: 100%;
-        height: 300px;
-        object-fit: cover; 
-    }
-     
-
-       
-    &:hover
-         {
-            transform: scale(1.1);
-        }
-    
-    
-`;
-
-const CardInfo = styled.div`
-
-        height: 50%;
-        width: 100%;
-        text-decoration: none;
-        text-align: center;
-
-        .name-tittle{
-            margin-bottom: 3rem;
-            position: relative;
-            h3{
-            width: 100%;
-            white-space: nowrap;
-            font-size: clamp(1rem, 6vw, 1.5rem);
-            font-weight: bold;
-            color: #fff;
-           
-            
-        }
-        i{
-            
-            position: absolute;
-            top: 2.5rem;
-            left: 39%;
-            font-weight: bold;
-            color: #DFCAA0;
-            
-        }
-
-        }
-   
-        
-        .price-book-divide{
-            flex-direction: column;
-        }
-        .btn{
-            text-decoration: none;
-            
-        }
-      
-`;
 
 
 
@@ -206,7 +70,33 @@ const ServiceGallery = () => {
         });
 
         setItems(updatedItems);
+
+
     }
+
+
+
+
+    // const [switchToggled, setSwitchToggled] = useState(false);
+
+
+    // const toggleSwitch = ({action, index})=>{
+    //     switchToggled ? setSwitchToggled(false) : setSwitchToggled(true);
+
+      
+
+
+
+    //     console.log(switchToggled);
+    // };
+
+  
+    // const rotate = (style) =>{
+    //     setStyle
+    // }
+    
+
+    
     return (
         <Service>
             <Tittle>
@@ -230,45 +120,64 @@ const ServiceGallery = () => {
             <ServiceItemsBox className="menu-items container-fluid mt-5">
                 <ServiceRow className="row">
                     <ServiceCol className="col-11 mx-auto">
-                        <div className="row my-5">
+                        <div className="row">
                             
                             {
                                 items.map((elem) => {
-                                    const { name, image, description, price, small } = elem;
+                                    const { name, image, description, price, small, time, info} = elem;
 
                                     return (
                                     
-                                        <ServiceItemCard to="/ProudctDetails" className="item1 col-12 col-md-6 col-lg-6 col-xl-4 my-5">
-                                            <Fade bottom>
-                                                <CardItems className="row Item-inside">
-                                                    {/* for images */}
-                                                    <CardImage className="img-div">
-                                                        <img src={image} alt={name} />
-                                                    </CardImage>
+                                        
 
-                                                    {/* menu items description */}
-                                                    <CardInfo className="col-12 col-md-12 col-lg-12">
-                                                        <div className="main-title mt-2">
-                                                            <div className="name-tittle">
-                                                                <h3>{name}</h3>
+                                        <ServiceItemCard key={elem.id} className="col-xl-4 col-l-4 col-md-6 col-sm-12">
+                                            <CardItems >
+                                                <Card className="card">
+                                                    
+                                                    <CardInfo class>
+                                                        <CardImage className="img-div">
+                                                            <img src={image} alt={name} />
+                                                        </CardImage>
+                                                        <div className="name-tittle">
+                                                            <h3>{name}</h3>
 
-                                                                <i>{small}</i>
-
-                                                            </div>                                                                                                              
-                                                      <p>{description }</p>
+                                                            <i>{small}</i>
                                                         </div>
-                                                        <div className="menu-price-book">
-                                                            <div className="price-book-divide d-flex">
-                                                                <h4>Price : {price}</h4>
-                                                            
-                                                                <Button to="/ServicesPg" className="btn" >Order Now</Button>
+                                                        <div className="info">
+                                                            <p>{description }</p>
+                                                            <h4>Price : {price}</h4>
                                                                 
-                                                            </div>
-                                                            
                                                         </div>
+                                                        <div className="price-book-divide d-flex">
+                                                            <Button className="btn" >Book Now</Button>
+                                                            
+                                                        </div> 
                                                     </CardInfo>
-                                                </CardItems>
-                                            </Fade>
+                                                    <CardBackFace>
+                                                        <TotalTime>
+                                                            {time}
+
+                                                        </TotalTime>
+                                                        <Descrip>
+                                                            <p>
+                                                                {info}
+                                                            </p>
+                                                        </Descrip>
+                                                        {/* <div className="price-book-divide d-flex">
+                                                            <Button  className="btn" >Book Now</Button>
+                                                            <Button className="btn" onClick={toggleSwitch}>More details..</Button>
+                                                            
+                                                        </div> */}
+
+                                                            
+                                                    </CardBackFace> 
+                                                </Card>
+                                                
+                                               
+                                                 
+                                            </CardItems>
+
+                                            
                                         </ServiceItemCard>
                                     )
                                 })
@@ -285,3 +194,223 @@ const ServiceGallery = () => {
 
 
 export default ServiceGallery;
+
+
+const ServiceItemCard = styled.div`
+    width: 100%;
+
+
+    color: #fff;
+      &:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+
+`;
+
+const CardItems = styled(Link)`
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 0 20px;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &:active .card,
+    :focus .card{
+        transform: rotateY(180deg);
+        text-decoration: none;
+        }
+    
+
+        
+        /* .active{
+            transform: rotateY(180deg);
+        }
+        .notActive{
+            transform: rotateY(0deg);
+        } */
+`;
+
+const Card = styled.div`
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    max-height: 600px;
+    height: 470px;
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px 10px;
+    background-image: url(${CardBg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:  all 1s ease-in-out;
+    transform-style: preserve-3d;
+    
+   
+
+    @media screen and (max-width: 550px){
+        margin: 50px -10px;
+    }
+    
+
+    
+`;
+
+
+const CardInfo = styled.div`
+
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        backface-visibility: hidden;
+        z-index: 2;
+        color: #fff;
+
+        .price-book-divide{
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            margin-top: 2rem;
+            position: relative;
+            bottom: 0;
+            left: 0;
+
+        }
+       
+ 
+        .name-tittle{
+            margin-bottom: 1.5rem;
+            backface-visibility: hidden;
+
+            /* @media screen and (max-width : 1024px){
+                margin-top: 0.5rem!important;
+            } */
+            &:Hover{
+                color: #fff;
+            }
+
+            h3{
+            width: 100%;
+            white-space: nowrap;
+            font-size: clamp(1rem, 5vw, 1.5rem);
+            font-weight: bold;
+            color: #fff;
+       
+           
+            
+            }
+            i{
+                position: absolute;
+                font-weight: bold;
+                top: 50%;
+                color: #DFCAA0;
+                right: 39%;
+                
+                
+            }
+
+       
+
+        }
+        .info{
+            height: 120px;
+        }
+   
+        
+        
+        .btn{
+            text-decoration: none;
+            flex: .5;
+            cursor: pointer;
+            
+        }
+
+      
+`;
+
+const CardImage = styled.div`
+    padding: 3px;
+    bottom: 0px;
+    transition: .3s ease-in-out;
+    overflow: hidden; 
+    width: 100%;
+
+
+    
+
+    img{
+        max-height: 340px;
+        max-width: 250px;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+       
+  
+    
+    
+`;
+
+
+
+
+// const More = styled(Link)`
+    
+//     text-decoration: none;
+//     color: green;
+//     font-size: 12px;
+//     background-color: #fff;
+//     flex: .5;
+//     margin-left: 1rem;
+//     white-space: nowrap;
+//     cursor: pointer;
+
+//     &:hover{
+//         text-decoration: none;
+//         color: green;
+//     }
+// `;
+
+const CardBackFace = styled.div`
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 1rem;
+    bottom: 0;
+   
+`;
+
+const TotalTime = styled.h2`
+    color: #fff;
+    
+    font-size: clamp(1.5rem, 5vw, 2rem);
+
+`;
+
+const Descrip = styled.div`
+   
+    color: #fff;
+    width: 90%;
+    margin: .5rem auto;
+    line-height: 2;
+`;
