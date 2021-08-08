@@ -412,6 +412,11 @@ const Descrip = styled.div`
     color: #fff;
     width: 90%;
     margin: .5rem auto;
-    padding: 2rem;
+    padding: 0rem;
     line-height: 2;
+
+
+    @media screen and (max-width: 420px){
+        padding: 2rem;
+    }
 `;
