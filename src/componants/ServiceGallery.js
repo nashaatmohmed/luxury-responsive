@@ -412,5 +412,6 @@ const Descrip = styled.div`
     color: #fff;
     width: 90%;
     margin: .5rem auto;
+    padding: 2rem;
     line-height: 2;
 `;

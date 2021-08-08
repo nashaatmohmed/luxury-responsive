@@ -40,6 +40,7 @@ const AboutRight = styled.div`
     align-items: center;
     line-height: 1.8;
     padding: 1rem 2rem;
+    margin-top: 0;
     order: ${({reverse}) =>(reverse ? '2' : '1')};
 
     h1{
@@ -56,6 +57,10 @@ const AboutRight = styled.div`
     }
     .BTN{
         height: 50px !important;
+    }
+
+    @media screen and (max-width: 768px){
+        margin-top: 2.5rem;
     }
 
 `;
