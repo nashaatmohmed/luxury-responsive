@@ -37,6 +37,12 @@ const ArabicHeader = styled.div`
 const ArabicInfo = styled.div`
     margin: 50px auto;
 
+    .tittle{
+        font-size: clamp(1.7rem,5vw,2.5rem);
+        width: 90%;
+        margin: 20px auto;
+    }
+
     h4{
         color: #500500;
         margin-bottom: 20px;
@@ -62,6 +68,7 @@ const ArabicDescrption = styled.div`
 
     @media screen and (max-width: 600px){
         grid-template-columns: 1fr ;
+        grid-gap: 0;
     }
 `;
 
@@ -123,7 +130,7 @@ const FootMassage = () => {
                 <img src={item.image} alt="Foot-img" />
             </ArabicHeader>
                 <div>
-                    <Tittle>
+                    <Tittle className="tittle">
                    {item.name}
                     <p><span>{item.time}</span>{item.price}</p>                       
                     </Tittle>

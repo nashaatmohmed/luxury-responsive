@@ -207,7 +207,7 @@ const Footer = () => {
                                 <FooterLink to="/">
                                     Home
                                 </FooterLink>
-                                <FooterLink to="/">
+                                <FooterLink to="/AboutPg">
                                     About Us
                                 </FooterLink>
                                 <FooterLink to="/Stuff">

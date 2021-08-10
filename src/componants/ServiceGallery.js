@@ -208,7 +208,7 @@ const ServiceGallery = () => {
                                                             <CardImage className="img-div">
                                                                 <img src={image} alt={name} />
                                                             </CardImage>
-                                                            <div className="name-tittle">
+                                                            <div className="name-tittle mt-2">
                                                                 <h3>{name}</h3>
 
                                                                 <i>{small}</i>
@@ -372,7 +372,7 @@ const CardInfo = styled.div`
             i{
                 position: absolute;
                 font-weight: bold;
-                top: 50%;
+                top: 51.5%;
                 color: #DFCAA0;
                 right: 39%;
                 

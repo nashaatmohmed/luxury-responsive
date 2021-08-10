@@ -27,6 +27,8 @@ import MorocArabic from './offerCardPg/MorocArabic';
 import TurkishMassage from './offerCardPg/TurkishMassage';
 import ManicureFaceFoot from './offerCardPg/ManicureFaceFoot';
 import FaceMassage from './offerCardPg/FaceMassage';
+import MorocoMassage from './offerCardPg/MorocoMassage';
+import Royal from './offerCardPg/Royal';
 import FootMassage from './ServiceCardPg/FootMassage';
 import Turkish from './ServiceCardPg/Turkish';
 import Head from './ServiceCardPg/Head';
@@ -201,6 +203,26 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle}/>
             <SocialMain />
             <FaceMassage/>
+            <Footer />
+          </Route>
+
+          <Route path="/MorocoMassage">
+            <GlobalStyle />
+            {/* <TopMenu />           */}
+            <Navbar toggle={toggle}/>
+            <Dropdown isOpen={isOpen} toggle={toggle}/>
+            <SocialMain />
+            <MorocoMassage />
+            <Footer />
+          </Route>
+
+          <Route path="/Royal">
+            <GlobalStyle />
+            {/* <TopMenu />           */}
+            <Navbar toggle={toggle}/>
+            <Dropdown isOpen={isOpen} toggle={toggle}/>
+            <SocialMain />
+            <Royal />
             <Footer />
           </Route>
 

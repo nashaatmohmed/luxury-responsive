@@ -37,6 +37,12 @@ const ArabicHeader = styled.div`
 const ArabicInfo = styled.div`
     margin: 50px auto;
 
+    .tittle{
+        font-size: clamp(1.7rem,5vw,2.5rem);
+        width: 90%;
+        margin: 20px auto;
+    }
+
     h4{
         color: #500500;
         margin-bottom: 20px;

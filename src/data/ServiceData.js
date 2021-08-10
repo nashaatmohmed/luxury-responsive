@@ -170,7 +170,7 @@ const Menu = [
         image: Image13,
         name:"Face Mask",
         category: "body",
-        price: "500",
+        price: "150",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         info: 'Face masks are great additions to any skincare routine to target specific skin care concerns. Masks can help hydrate skin, remove excess oils and help improve the appearance of pores—while providing a relaxing, spa-like experience at home.',
         time:'1 Hr Face Mask',

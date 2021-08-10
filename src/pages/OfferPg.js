@@ -105,32 +105,13 @@ const OfferCard = styled(Link)`
         text-decoration: none;
         }
 
-    .front-box{
-        
-        z-index: 2;
-    }
+    
 
-    .back-box{
-        transform: rotateY(180deg);
-        z-index: 1;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        top: 0;
-        bottom: 0;
-        padding: 0 .5rem ;
-
-        p{
-            font-size: 15px;
-            font-weight: 500;
-            margin: 10px auto;
-            line-height: 1.8;
-        }
-    }
+    
 
 
     @media screen and (max-width: 550px){
-        margin: 50px -10px;
+        margin: 10px -10px;
     }
     
     

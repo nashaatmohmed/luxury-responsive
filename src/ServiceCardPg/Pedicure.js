@@ -37,6 +37,12 @@ const ArabicHeader = styled.div`
 const ArabicInfo = styled.div`
     margin: 50px auto;
 
+    .tittle{
+        font-size: clamp(1.7rem,5vw,2.5rem);
+        width: 90%;
+        margin: 20px auto;
+    }
+
     h4{
         color: #500500;
         margin-bottom: 20px;
@@ -62,6 +68,7 @@ const ArabicDescrption = styled.div`
 
     @media screen and (max-width: 600px){
         grid-template-columns: 1fr ;
+        grid-gap: 0;
     }
 `;
 
@@ -123,7 +130,7 @@ const FootMassage = () => {
                 <img src={item.image} alt="Foot-img" />
             </ArabicHeader>
                 <div>
-                    <Tittle>
+                    <Tittle className="tittle">
                    {item.name}
                     <p><span>{item.time}</span>{item.price}</p>                       
                     </Tittle>
@@ -132,10 +139,20 @@ const FootMassage = () => {
                         <LeftSide>
                             <h4>{item.description}</h4>
                             <ul>
+                            <li>
+                                {item.descriptionListOne}                               
+                                </li>
                                 <li>
-                                    Special Offer From ''Luxury ARAB SPA'' You Can Get Full Body Massage, Manicure, Pedicure, And Face Mask                                </li>
+                                {item.descriptionListTwo}                                
+                                </li>
                                 <li>
-                                    Our trained therapists are from Morocco, Tunisia, Egypt, Algeria, China And Thailand!                                
+                                {item.descriptionListThree}                                
+                                </li>
+                                <li>
+                                {item.descriptionListFour}                                
+                                </li>
+                                <li>
+                                {item.descriptionListFive}                                
                                 </li>
                        
                             </ul>
@@ -148,23 +165,21 @@ const FootMassage = () => {
 
                             <ul>
                                 <li>
-                                Relieve stress                                
+                                {item.benfitsListOne}                                
                                 </li>
                                 <li>
-                                Helps with fibromyalgia pain
+                                {item.benfitsListTwo} 
                                 </li>
                                 <li>
-                                Reducing muscle tension
+                                {item.benfitsListThree} 
                                 </li>
                                 <li>
-                                Enhancing exercise performance
+                                {item.benfitsListFour}
                                 </li>
                                 <li>
-                                Relief from tension headaches
+                                {item.benfitsListFive}
                                 </li>
-                                <li>
-                                Improving balance in the elderly
-                                </li>
+                               
                                 
                            
                             </ul>

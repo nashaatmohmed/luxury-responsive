@@ -45,7 +45,8 @@ const NavLinks = css`
     align-items: center;
     height: 100%;
     cursor: pointer;
-
+    font-weight: bold;
+    letter-spacing: 1px;
     list-style: none;
     color: #fff;
     padding: 0 1rem;

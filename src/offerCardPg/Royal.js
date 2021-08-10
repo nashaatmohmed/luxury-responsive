@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../componants/Button';
 import { Tittle } from '../componants/Tittle';
-import Stuff1 from '../images/75-min-Moroccan-bath-with-arabic-massage-350-AEDluxury-arab-spa-best-massage-in-d.jpg';
+import Stuff6 from '../images/2hr Royal package.jpg';
 import BgGround from '../images/background-web.jpg';
 
 const Arabic = styled.div`
@@ -116,13 +116,13 @@ const MorocArabic = () => {
     return (
         <Arabic>
             <ArabicHeader>
-                <img src={Stuff1} alt="" />
+                <img src={Stuff6} alt="" />
             </ArabicHeader>
             <ArabicInfo>
                 <div>
                     <Tittle>
-                    75 Min Moroccan Bath with Arabic Massage
-                        <p></p>
+                    Royal Package                    
+                    <p><span className="mr-2">2 hr</span>600 AED</p>
                     </Tittle>
 
                     <ArabicDescrption>

@@ -26,7 +26,7 @@ const VideoContainer = styled.div`
     }
 
     @media screen and (max-width: 420px){
-        height: 35vh;
+        height: 30vh;
         margin-top: 80px;
     }
     

@@ -38,6 +38,12 @@ const ManicureHeader = styled.div`
 const ManicureInfo = styled.div`
     margin: 50px auto;
 
+    .tittle{
+        font-size: clamp(1.7rem,5vw,2.5rem);
+        width: 90%;
+        margin: 0 auto;
+    }
+
     h4{
         color: #500500;
         margin-bottom: 20px;
@@ -63,12 +69,13 @@ const ManicureDescrption = styled.div`
 
     @media screen and (max-width: 600px){
         grid-template-columns: 1fr ;
+        grid-gap: 0;
     }
 `;
 
 
 const LeftSide = styled.div`
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
 
  
@@ -121,7 +128,7 @@ const ManicureFaceFoot = () => {
             </ManicureHeader>
             <ManicureInfo>
                 <div>
-                    <Tittle>
+                    <Tittle className="tittle">
                     Maincur Pedicure and Face Mask and Foot Massage
                     <p>400 AED</p>
                     </Tittle>

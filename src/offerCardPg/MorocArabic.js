@@ -50,7 +50,7 @@ const ArabicInfo = styled.div`
         span{
             font-size: 16px;
             color: #000;
-           
+            margin-top: 10px;
         }
     }
 `;

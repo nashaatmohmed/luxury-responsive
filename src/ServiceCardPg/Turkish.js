@@ -16,6 +16,8 @@ const ArabicHeader = styled.div`
     width: 100%;
     height: 100%;
 
+    
+
     img{
         width: 100%;
         height: 71vh;
@@ -37,9 +39,16 @@ const ArabicHeader = styled.div`
 const ArabicInfo = styled.div`
     margin: 50px auto;
 
+    .tittle{
+        font-size: clamp(1.7rem,5vw,2.5rem);
+        width: 90%;
+        margin: 20px auto;
+    }
+
     h4{
         color: #500500;
         margin-bottom: 20px;
+        
     }
     p{
         font-size: 30px;
@@ -120,65 +129,67 @@ const FootMassage = () => {
             {DataTwo.map((item, index) =>(
                 <ArabicInfo key={index}>
                     <ArabicHeader>
-                <img src={item.image} alt="Foot-img" />
-            </ArabicHeader>
-                <div>
-                    <Tittle>
-                   {item.name}
-                    <p><span>{item.time}</span>{item.price}</p>                       
-                    </Tittle>
+                        <img src={item.image} alt="Foot-img" />
+                    </ArabicHeader>
+                    <div>
+                        <Tittle className="tittle">
+                    {item.name}
+                        <p><span>{item.time}</span>{item.price}</p>                       
+                        </Tittle>
 
-                    <ArabicDescrption>
-                        <LeftSide>
-                            <h4>{item.description}</h4>
-                            <ul>
-                                <li>
-                                    Special Offer From ''Luxury ARAB SPA'' You Can Get Full Body Massage, Manicure, Pedicure, And Face Mask                                </li>
-                                <li>
-                                    Our trained therapists are from Morocco, Tunisia, Egypt, Algeria, China And Thailand!                                
-                                </li>
-                       
-                            </ul>
-                        </LeftSide>
+                        <ArabicDescrption>
+                            <LeftSide>
+                                <h4>{item.description}</h4>
+                                <ul>
+                                    <li>
+                                    {item.descriptionListOne}
+                                    </li>
+                                    <li>
+                                    {item.descriptionListTwo}
+                                    </li>
+                                    <li>
+                                    {item.descriptionListThree}
+                                    </li>
+                        
+                                </ul>
+                            </LeftSide>
 
-                        <RightSide>
-                            <h4>
-                                {item.benfits}
-                            </h4>
+                            <RightSide>
+                                <h4>
+                                    {item.benfits}
+                                </h4>
 
-                            <ul>
-                                <li>
-                                Relieve stress                                
-                                </li>
-                                <li>
-                                Helps with fibromyalgia pain
-                                </li>
-                                <li>
-                                Reducing muscle tension
-                                </li>
-                                <li>
-                                Enhancing exercise performance
-                                </li>
-                                <li>
-                                Relief from tension headaches
-                                </li>
-                                <li>
-                                Improving balance in the elderly
-                                </li>
+                                <ul>
+                                    <li>
+                                    {item.benfitsListOne}                              
+                                    </li>
+                                    <li>
+                                    {item.benfitsListTwo}
+                                    </li>
+                                    <li>
+                                    {item.benfitsListThree}
+                                    </li>
+                                    <li>
+                                    {item.benfitsListFour}
+                                    </li>
+                                    <li>
+                                    {item.benfitsListFive}
+                                    </li>
                                 
-                           
-                            </ul>
-                        </RightSide>
-                    </ArabicDescrption>
+                                    
+                            
+                                </ul>
+                            </RightSide>
+                        </ArabicDescrption>
 
-                    <ArabicBook>
-                        <Button primary="true" >
-                            Book Now
-                        </Button>
-                    </ArabicBook>
-                </div>
+                        <ArabicBook>
+                            <Button primary="true" >
+                                Book Now
+                            </Button>
+                        </ArabicBook>
+                    </div>
 
-            </ArabicInfo>
+                </ArabicInfo>
             ))}
             
             
