@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 import styled from 'styled-components';
 import Menu from '../data/ServiceData';
 import { Button } from './Button';
@@ -8,6 +7,9 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import CardBg from '../images/back-ground-card.webp';
 import { Link } from 'react-router-dom';
+import IconOne from '../images/body-care.png';
+import IconTwo from '../images/massage.png';
+import IconThree from '../images/morocan-bath.png';
 
 
 
@@ -19,20 +21,71 @@ const Service = styled.section`
 `;
 
 const ServiceCategory = styled.div`
-   
+   height: 120px;
+
+   @media screen and (max-width : 600px){
+    height: 250px;
+   }
 
 `;
 
-const ServiceListContent = styled.div`
-    .btn{
-        height: 50px;
-        
-    }
+const ServiceListContent = styled.ul`
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+    
+   
+
+    
     @media screen and (max-width : 600px){
         display: grid !important;
         grid-template-columns: 1fr 1fr;
-        margin: auto;
+        white-space: nowrap;
+        grid-gap: 15px;
+        
 
+        li.react-reveal.btn.last {
+            position: relative;
+            top: 0;
+            left: 50%;
+        }
+        
+
+    }
+
+
+    li{
+        transition: all .5s ease-in-out;
+        border: 1px solid #F7EED6;
+        border-spacing: 15px;
+        border-radius: 9%;
+        margin: 0 10px;
+  
+
+    &:hover img,
+    :hover big{
+        transform: translateY(-6px);
+        color: rgba(0, 0, 0, .8);
+  
+     
+
+    }
+    }
+    big{
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(0, 0, 0, .5);
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
     }
 `;
 
@@ -102,16 +155,31 @@ const ServiceGallery = () => {
         <Service>
             <Tittle>
                 Services
-                <p>what we have ?</p>
+                <p>choose Your Service..</p>
             </Tittle>
             
             <ServiceCategory className="menu-tabs container">
-                <ServiceListContent className="menu-tab d-flex justify-content-center">
+                <ServiceListContent className="menu-tab">
                     <Fade top>
-                        <Button className="btn mr-3 mt-5" onClick={() => setItems(Menu)}>All Servicse</Button>
-                        <Button className="btn mr-4 mt-5" onClick={() => filterItem('massage')}>Massage</Button>
-                        <Button className="btn mr-4 mt-5" onClick={() => filterItem('moroccan')}>Moroccan Bath</Button>
-                        <Button className="btn mr-4 mt-5" onClick={() => filterItem('body')}>Body Care</Button>
+                        
+                        {/* <Button className="btn mr-3 mt-5" onClick={() => setItems(Menu.categItem)}>All Servicse</Button> */}
+                        <li className="btn " onClick={() => filterItem('moroccan')}>
+                            <img src={IconThree} alt="bath" />
+                            <big>Moroccan Bath</big>
+                        </li>
+
+                        <li className="btn" onClick={() => filterItem('body')}>
+                            <img src={IconOne} alt="body care" />
+                            <big>Body Care</big>
+                        </li>
+
+                        <li className="btn last" onClick={() => filterItem('massage')}>
+                            <img src={IconTwo} alt="massage" />
+                            <big>Massage</big>
+                        </li>
+                        
+                       
+                    
                     </Fade>
                     
                 </ServiceListContent>
@@ -125,14 +193,14 @@ const ServiceGallery = () => {
                             
                             {
                                 items.map((elem) => {
-                                    const { name, image, description, price, small, time, info} = elem;
+                                    const { name, image, description, price, small,link} = elem;
 
                                     return (
                                     
                                         
 
                                         <ServiceItemCard key={elem.id} className="col-xl-4 col-l-4 col-md-6 col-sm-12">
-                                            <CardItems >
+                                            <CardItems to={link}>
                                                 <Slide bottom>
                                                     <Card className="card">
                                                         
@@ -151,28 +219,11 @@ const ServiceGallery = () => {
                                                                     
                                                             </div>
                                                             <div className="price-book-divide d-flex">
-                                                                <Button className="btn" >Book Now</Button>
+                                                                <Button to="/ContactPg" className="btn" >Book Now</Button>
                                                                 
                                                             </div> 
                                                         </CardInfo>
-                                                        <CardBackFace>
-                                                            <TotalTime>
-                                                                {time}
-
-                                                            </TotalTime>
-                                                            <Descrip>
-                                                                <p>
-                                                                    {info}
-                                                                </p>
-                                                            </Descrip>
-                                                            {/* <div className="price-book-divide d-flex">
-                                                                <Button  className="btn" >Book Now</Button>
-                                                                <Button className="btn" onClick={toggleSwitch}>More details..</Button>
-                                                                
-                                                            </div> */}
-
-                                                                
-                                                        </CardBackFace> 
+                                                        
                                                     </Card>
                                                 </Slide>
                                                 
@@ -223,14 +274,16 @@ const CardItems = styled(Link)`
     border-radius: 12px;
     padding: 0 20px;
     text-decoration: none;
+    transition: all .3s ease-in-out;
 
     &:hover{
         text-decoration: none;
+        transform: translateY(-4px);
     }
 
     &:active .card,
     :focus .card{
-        transform: rotateY(180deg);
+        transform: translateY(-4px);
         text-decoration: none;
         }
     
@@ -266,7 +319,7 @@ const Card = styled.div`
    
 
     @media screen and (max-width: 550px){
-        margin: 50px -10px;
+        margin: 30px -10px;
     }
     
 
@@ -280,7 +333,6 @@ const CardInfo = styled.div`
         width: 100%;
         text-decoration: none;
         text-align: center;
-        backface-visibility: hidden;
         z-index: 2;
         color: #fff;
 
@@ -387,39 +439,3 @@ const CardImage = styled.div`
 //         color: green;
 //     }
 // `;
-
-const CardBackFace = styled.div`
-    transform: rotateY(180deg);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 1rem;
-    bottom: 0;
-   
-`;
-
-const TotalTime = styled.h2`
-    color: #fff;
-    
-    font-size: clamp(1.5rem, 5vw, 2rem);
-
-`;
-
-const Descrip = styled.div`
-   
-    color: #fff;
-    width: 90%;
-    margin: .5rem auto;
-    padding: 0rem;
-    line-height: 2;
-
-
-    @media screen and (max-width: 420px){
-        padding: 2rem;
-    }
-`;

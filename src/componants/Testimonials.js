@@ -63,6 +63,12 @@ const TestimonialsWrapper = styled.div`
         padding: 0 20px;
     }
 
+    .none{
+        @media screen and (max-width : 420px){
+            display: none;
+        }
+    }
+
 `;
 
 const TestimonialsCard = styled.div`
@@ -89,6 +95,7 @@ const TestimonialsCard = styled.div`
     
         margin-bottom: 10px;
     }
+    
 `;
 
 
@@ -182,7 +189,7 @@ const Testimonials = () => {
 
 
                 <Slide left>
-                    <TestimonialsCard>                  
+                    <TestimonialsCard className="none">                  
                         <TestimonialsIcon src={Icon4}/>
                         <TestimonialsHeading>
                         Luxury Arap Spa
@@ -194,7 +201,7 @@ const Testimonials = () => {
                 </Slide>
 
                 <Fade bottom>
-                    <TestimonialsCard>                  
+                    <TestimonialsCard className="none">                  
                         <TestimonialsIcon src={Icon5}/>
                         <TestimonialsHeading>
                         Luxury Arap Spa
@@ -206,7 +213,7 @@ const Testimonials = () => {
                 </Fade>
 
                 <Slide right>
-                    <TestimonialsCard>                  
+                    <TestimonialsCard className="none">                  
                         <TestimonialsIcon src={Icon6}/>
                         <TestimonialsHeading>
                         Luxury Arap Spa

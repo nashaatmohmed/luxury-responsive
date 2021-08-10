@@ -7,14 +7,17 @@ import Slide from 'react-reveal/Slide';
 const AboutSection = styled.section`
     width: 100%;
     height: 100%;
-    padding: 2rem 0rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
 
     @media screen and (max-width: 768px) {
-        padding: 3rem 0rem;
+        padding: 0rem;
     }
 
     @media screen and (max-width: 420px) {
+  
       margin-top: 8rem;
+      padding: 4rem 0;
     }
 
 `;
@@ -29,6 +32,9 @@ const AboutContainer = styled.div`
         grid-template-columns: 1fr;
         grid-template-rows: 300px;
         margin: auto;
+    }
+    @media screen and (max-width: 420px){
+        margin: -30px auto;
     }
 
 `;
@@ -62,6 +68,12 @@ const AboutRight = styled.div`
     @media screen and (max-width: 768px){
         margin-top: 2.5rem;
     }
+
+    @media screen and (max-width: 420px){
+        margin-top: 0 !important;
+    }
+
+    
 
 `;
 
@@ -117,7 +129,7 @@ const About = ({heading,paragraphOne,buttonLabel,reverse,image}) => {
                         <h1>{heading}</h1>
                         <p>{paragraphOne} </p>
                     
-                        <Button className="BTN" to="/Stuff"  primary="true"  big="true">{buttonLabel} </Button>
+                        <Button className="BTN" to="/AboutPg"  primary="true"  big="true">{buttonLabel} </Button>
                     
                         
                     </Slide>    
