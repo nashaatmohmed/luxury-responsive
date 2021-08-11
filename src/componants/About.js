@@ -129,7 +129,7 @@ const About = ({heading,paragraphOne,buttonLabel,reverse,image}) => {
                         <h1>{heading}</h1>
                         <p>{paragraphOne} </p>
                     
-                        <Button className="BTN" to="/AboutPg"  primary="true"  big="true">{buttonLabel} </Button>
+                        <Button className="BTN" to="/Stuff"  primary="true"  big="true">{buttonLabel} </Button>
                     
                         
                     </Slide>    

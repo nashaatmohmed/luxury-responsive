@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Head from '../images/contact.jpg';
+import Head from '../images/contact-us.jpg';
 // import {Form, Row, Col, InputGroup, Button} from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import Menu from '../data/ServiceData';
+import { Button } from '../componants/Button';
 
 
 const Contact = styled.section`
@@ -18,7 +19,7 @@ const Contact = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    background-color: gray;
+    background-color: #500500;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .6);
 
@@ -39,16 +40,32 @@ const Contact = styled.section`
    }
 
    .btn-info{
-    display: block;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    height: 50px;
+    text-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 800;
+  
    }
 `;
 
 const ContactImg = styled.img`
     width: 100%;
     height: 70vh;
-    object-fit: cover;
+    object-fit: fill;
     filter: brightness(.5);
+    margin-top: 80px;
+
+    @media screen and (max-width: 768px){
+      height: 35vh;
+    }
+
+    @media screen and (max-width: 420px){
+      height: 25vh;
+    }
 `;
 
 
@@ -82,7 +99,7 @@ const ContactPg = () => {
         <Contact>
            <ContactImg src={Head} alt="head-pic" />
             <div className="container">
-              <form  onSubmit={sendEmail}>
+              <form onSubmit={sendEmail}>
                 <div className="row pt-5 mx-auto">
                   {/* <div className="d-none" name="book">
                     Booking Services Request
@@ -167,7 +184,7 @@ const ContactPg = () => {
                   
                 </div>
                 <div className="col-12 d-block pt-2 mx-auto ">
-                    <input type="submit" className="btn btn-info align-center" value="send massage"></input>
+                    <Button big="true" type="submit" className="btn btn-info align-center" value="send massage">Send </Button>
                   </div>
               </form>
 

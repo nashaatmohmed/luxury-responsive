@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import BrandLogo from '../images/logo.png';
-import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaPhoneAlt} from 'react-icons/fa';
+import {FaFacebook, FaInstagram, FaPinterestP, FaBloggerB, FaTwitter, FaLinkedin} from 'react-icons/fa';
 import { TiLocation } from "react-icons/ti";
-import MainBg from '../images/background-web.jpg'
+import MainBg from '../images/background-web.jpg';
+import SettingsPhoneIcon from '@material-ui/icons/SettingsPhone';
+
+
 
 
 const FooterSection = styled.footer`
@@ -101,7 +104,7 @@ const FooterLink = styled(Link)`
     line-height: 2;
 
     &:hover{
-        color: red;
+        color: #A88E6F;
         transition: 0.3s ease-out;
         text-decoration: none;
     }
@@ -156,7 +159,17 @@ const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
 `;
+const FooterLinks = styled.div`
+    a{
+        text-decoration: none;
+        color: #fff;
 
+        &:hover{
+            text-decoration: none;
+            color: #A88E6F;
+        }
+    }
+`;
 
 
 
@@ -181,13 +194,13 @@ const Footer = () => {
                                 <FooterAdress>
                                 - Grand Excelsior Hotel Bur Dubai <br/>Free Parking
                                 </FooterAdress>
-                                 <FooterLink to="/">
-                                    <span className="mr-3">
-                                     <FaPhoneAlt />
-                                    </span>
-                                    Call : 971 528082776
+                                 <FooterLinks>
+                                 <a href="tel:971528082776">
+                                    <SettingsPhoneIcon style={{ fontSize: 30 }}/>
+                                    <span>+971528082776</span>
+                                </a>
 
-                                </FooterLink>
+                                </FooterLinks>
                                 {/*
                                 <FooterLink to="/">
                                     About Us
@@ -200,6 +213,8 @@ const Footer = () => {
                                 </FooterLink> */}
                         </FooterLinkItems>
 
+                       
+
                         <FooterLinkItems>
                             <FooterLinkTitle>
                                     Category
@@ -207,11 +222,11 @@ const Footer = () => {
                                 <FooterLink to="/">
                                     Home
                                 </FooterLink>
-                                <FooterLink to="/AboutPg">
+                                {/* <FooterLink to="/AboutPg">
                                     About Us
-                                </FooterLink>
+                                </FooterLink> */}
                                 <FooterLink to="/Stuff">
-                                    Our Team
+                                MASSEUSE
                                 </FooterLink>
                                 <FooterLink to="/servicesPg">
                                     Services
@@ -263,14 +278,14 @@ const Footer = () => {
 
                       
                             <SocialIconLink 
-                                href="/"
+                                href="https://www.facebook.com/luxuryarab"
                                 target="_blank"
                                 aria-label="Facebook">
                                 <FaFacebook />
 
                             </SocialIconLink>
                             <SocialIconLink
-                                href="/" 
+                                href="https://www.instagram.com/luxuryarabspa/" 
                                 target="_blank" 
                                 aria-label="Instagram">
                                 <FaInstagram />
@@ -279,19 +294,26 @@ const Footer = () => {
                             <SocialIconLink 
                                 href="/" 
                                 target="_blank" 
-                                aria-label="Youtube">
-                                <FaYoutube />
+                                aria-label="Pinterest">
+                                <FaPinterestP />
 
                             </SocialIconLink>
                             <SocialIconLink 
-                                href="/" 
+                                href="https://luxuryarabspa.blogspot.com/" 
+                                target="_blank" 
+                                aria-label="Blogspot">
+                                <FaBloggerB />
+
+                            </SocialIconLink>
+                            <SocialIconLink 
+                                href="https://twitter.com/luxuryarabspa" 
                                 target="_blank" 
                                 aria-label="Twitter">
                                 <FaTwitter />
 
                             </SocialIconLink>
                             <SocialIconLink 
-                                href="/" 
+                                href="https://www.linkedin.com/company/luxuryarabspa/" 
                                 target="_blank" 
                                 aria-label="Linkedin">
                                 <FaLinkedin/>

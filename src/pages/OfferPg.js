@@ -86,7 +86,7 @@ const OfferCard = styled(Link)`
     height: 400px;
     max-width: 300px;
     padding: 20px;
-    margin: 50px 10px;
+    margin: 20px 10px;
     background-image: url(${CardBg});
     background-size: cover;
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@ const OfferCard = styled(Link)`
         font-size: 1.1rem;
         white-space: nowrap;
         margin: 20px 0 0 0;
-        color: #000;
+        color: #fff;
 
         @media screen and (max-width : 768px){
            white-space: normal;
